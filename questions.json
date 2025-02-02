@@ -101,12 +101,12 @@
       "type": "mcq",
       "question": "자바에서 int형 변수의 기본값(인스턴스 변수 기준)은?",
       "options": {
-        "A": "쓰레기 값",
+        "A": "1",
         "B": "null",
         "C": "정의되지 않음",
-        "D": "D"
+        "D": "0"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "D"
     },
     {
       "id": "m10",
@@ -514,7 +514,7 @@
         "C": "6 3",
         "D": "3 3"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "A"
     },
     {
       "id": "m44",
@@ -703,7 +703,7 @@
       "type": "code",
       "question": "new 연산자를 사용하여 \"hello\"를 값으로 갖는 String 객체를 생성하는 코드를 완성하세요.",
       "codeSnippet": "String s = ____;",
-      "answers": ["new","String(\"hello\")"]
+      "answers": ["new", "String(\"hello\")"]
     },
     {
       "id": "c16",
@@ -1122,14 +1122,14 @@
     {
       "id": "u2m17",
       "type": "mcq",
-      "question": "자바에서 메서드 시그니처에 포함되지 않는 것은 무엇인가?",
+      "question": "자바에서 메서드 오버라이딩을 결정하는 메서드 시그니처는 무엇인가?",
       "options": {
-        "A": "메서드 이름",
-        "B": "매개변수 목록",
-        "C": "반환형",
-        "D": "예외 선언"
+        "A": "메서드 이름과 매개변수 목록",
+        "B": "메서드 이름과 반환형",
+        "C": "매개변수 목록과 반환형",
+        "D": "메서드 이름과 예외 선언"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "A"
     },
     {
       "id": "u2m18",
@@ -2454,182 +2454,181 @@
       },
       "correctAnswer": "A"
     },
-      {
-        "id": "u3c1",
-        "type": "code",
-        "question": "【가정】부모 클래스의 이름은 Parent, 자식 클래스의 이름은 Child입니다.\n다음 코드를 완성하여 Child 클래스가 Parent 클래스를 상속받도록 하시오.",
-        "codeSnippet": "class Child __ Parent { }",
-        "answers": ["extends"]
-      },
-      {
-        "id": "u3c2",
-        "type": "code",
-        "question": "【가정】부모 클래스(Parent)에 display() 메서드가 정의되어 있습니다.\n자식 클래스(Child)에서 display() 메서드를 오버라이딩하면서, 부모 클래스의 display() 메서드를 호출하는 코드를 완성하시오.",
-        "codeSnippet": "public void display() { return __.display(); }",
-        "answers": ["super"]
-      },
-      {
-        "id": "u3c3",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 int형 멤버 변수 value와 getValue() 메서드가 정의되어 있습니다.\n자식 클래스(Child)에서, 부모 클래스의 private 멤버에 직접 접근할 수 없으므로 getter를 통해 값을 읽어오는 코드를 완성하시오.",
-        "codeSnippet": "public int fetchValue() { return __; }",
-        "answers": ["super.getValue()"]
-      },
-      {
-        "id": "u3c4",
-        "type": "code",
-        "question": "【가정】자식 클래스(Child)의 생성자에서 부모 클래스(Parent)의 기본 생성자를 명시적으로 호출하여 초기화를 수행하고자 합니다.\n아래 코드의 빈칸을 채워 넣으시오.",
-        "codeSnippet": "public Child() { __(); }",
-        "answers": ["super"]
-      },
-      {
-        "id": "u3c5",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 final 메서드 display()가 정의되어 있습니다.\n다음 코드는 Child 클래스에서 display() 메서드를 오버라이딩하려 할 때 발생하는 컴파일 오류를 보여줍니다.\n빈칸에 올바른 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Parent {\n    public final void display() { }\n}\n\nclass Child extends Parent {\n    public void __() { }\n}",
-        "answers": ["display"]
-      },
-      {
-        "id": "u3c6",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 int형 멤버 변수 number가 정의되어 있습니다.\nChild 클래스에서, 동일한 이름의 멤버 변수를 선언하여 부모의 변수를 숨기는(shadowing) 예제를 완성하시오.",
-        "codeSnippet": "class Child extends Parent {\n    private int __ = 10;\n}",
-        "answers": ["number"]
-      },
-      {
-        "id": "u3c7",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 오버라이딩 가능한 compute() 메서드가 정의되어 있습니다.\nChild 클래스에서 compute() 메서드를 재정의하여, 부모 메서드의 결과에 5를 더한 값을 반환하는 코드를 완성하시오.",
-        "codeSnippet": "public int compute() { return __+__; }",
-        "answers": ["super.compute()","5"]
-      },
-      {
-        "id": "u3c8",
-        "type": "code",
-        "question": "Child 클래스에서 생성자 체이닝을 사용하여, 같은 클래스 내의 다른 생성자를 호출하는 예제를 완성하시오.",
-        "codeSnippet": "public Child(int num) { __(num); }",
-        "answers": ["this"]
-      },
-      {
-        "id": "u3c9",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 정적 메서드 staticMethod()가 정의되어 있습니다.\nParent 클래스의 정적 메서드를 클래스 이름을 사용하여 호출하는 코드를 완성하시오.",
-        "codeSnippet": "Parent.__();",
-        "answers": ["staticMethod"]
-      },
-      {
-        "id": "u3c10",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 process() 메서드가 정의되어 있습니다.\nChild 클래스에서 @Override 어노테이션을 사용하여 process() 메서드를 오버라이딩하는 예제를 완성하시오.",
-        "codeSnippet": "@Override\npublic void __() { System.out.println(\"오버라이딩\"); }",
-        "answers": ["process"]
-      },
-      {
-        "id": "u3c11",
-        "type": "code",
-        "question": "【가정】부모 클래스는 Parent, 자식 클래스는 Child입니다.\n부모 타입의 참조변수에 자식 객체를 할당하는 업캐스팅 예제를 완성하시오.",
-        "codeSnippet": "Parent p = new __();",
-        "answers": ["Child"]
-      },
-      {
-        "id": "u3c12",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 protected로 선언된 display() 메서드가 존재합니다.\nChild 클래스에서 해당 메서드를 오버라이딩하는 예제를 완성하시오.",
-        "codeSnippet": "protected void __() { System.out.println(\"재정의\"); }",
-        "answers": ["display"]
-      },
-      {
-        "id": "u3c13",
-        "type": "code",
-        "question": "Child 클래스의 생성자에서 자신의 멤버 변수를 초기화할 때, 명확한 식별을 위해 사용하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public Child(int num) { __.num = num; }",
-        "answers": ["this"]
-      },
-      {
-        "id": "u3c14",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 정의된 getValue() 메서드를 재사용하여, Child 클래스에서 값을 반환하는 코드를 완성하시오.",
-        "codeSnippet": "public int fetchParentValue() { return __.__; }",
-        "answers": ["super","getValue()"]
-      },
-      {
-        "id": "u3c15",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 show() 메서드가 정의되어 있습니다.\nChild 클래스에서 부모의 show() 메서드를 오버라이딩하지 않고 그대로 호출하기 위해, 올바른 코드를 완성하시오.",
-        "codeSnippet": "public void callShow() { __.show(); }",
-        "answers": ["super"]
-      },
-      {
-        "id": "u3c16",
-        "type": "code",
-        "question": "【가정】Parent 클래스의 생성자가 int형 매개변수를 받습니다.\nChild 클래스의 생성자에서, 부모 클래스의 해당 생성자에 매개변수를 전달하여 호출하는 코드를 완성하시오.",
-        "codeSnippet": "public Child(int num) { __(num); }",
-        "answers": ["super"]
-      },
-      {
-        "id": "u3c17",
-        "type": "code",
-        "question": "【가정】Parent 클래스의 process() 메서드는 throws Exception을 선언합니다.\nChild 클래스에서 이 메서드를 오버라이딩할 때, 부모와 동일하거나 좁은 범위의 예외를 선언하는 예제를 완성하시오.",
-        "codeSnippet": "public void process() throws __ { }",
-        "answers": ["Exception"]
-      },
-      {
-        "id": "u3c18",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 정의된 getInstance() 메서드의 반환형은 Parent입니다.\nChild 클래스에서 공변 반환형을 활용하여, getInstance() 메서드를 재정의하고 Child 타입의 객체를 반환하는 코드를 완성하시오.",
-        "codeSnippet": "public __ getInstance() { return new Child(); }",
-        "answers": ["Child"]
-      },
-      {
-        "id": "u3c19",
-        "type": "code",
-        "question": "Child 클래스에서 getNumber() 메서드를 재정의하여, 항상 42를 반환하도록 구현하는 예제를 완성하시오.",
-        "codeSnippet": "public int getNumber() { return __; }",
-        "answers": ["42"]
-      },
-      {
-        "id": "u3c20",
-        "type": "code",
-        "question": "Child 클래스에서 오버라이딩하지 않고, Parent 클래스에 정의된 compute() 메서드를 그대로 호출하여 그 결과를 반환하는 코드를 완성하시오.",
-        "codeSnippet": "public int compute() { return __.__; }",
-        "answers": ["super","compute()"]
-      },
-      {
-        "id": "u3c21",
-        "type": "code",
-        "question": "메서드 오버로딩을 통해, 동일한 이름의 calculate() 메서드를 서로 다른 매개변수로 정의하는 예제를 완성하시오.\n(예: 첫 번째 calculate()는 int 하나를, 두 번째 calculate()는 int 두 개를 매개변수로 받음)",
-        "codeSnippet": "public int calculate(int a) { return a * 2; }\npublic int calculate(__ b, int c) { return b + c; }",
-        "answers": ["int"]
-      },
-      {
-        "id": "u3c22",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 정적 메서드 staticMethod()가 정의되어 있습니다.\nChild 클래스에서 오버라이딩 없이, Parent 클래스의 정적 메서드를 클래스 이름을 사용하여 호출하는 코드를 완성하시오.",
-        "codeSnippet": "Parent.__();",
-        "answers": ["staticMethod"]
-      },
-      {
-        "id": "u3c23",
-        "type": "code",
-        "question": "【가정】Parent 클래스에 protected 또는 public으로 선언된 int형 필드 data가 있습니다.\nChild 클래스에서 동일한 이름의 필드를 선언하여 부모의 필드를 숨기는(shadowing) 상황에서, 부모 클래스의 data 값을 참조하는 코드를 완성하시오.",
-        "codeSnippet": "public int getParentData() { return __.__; }",
-        "answers": ["super","data"]
-      },
-      {
-        "id": "u3c24",
-        "type": "code",
-        "question": "Child 클래스에서 부모 클래스(Parent)의 멤버 메서드를 재정의하지 않고 그대로 호출하기 위해 사용하는 키워드를 코드에 채워 넣으시오.",
-        "codeSnippet": "public void invokeParent() { __.method(); }",
-        "answers": ["super"]
-      },
-      {
-        "id": "u3c25",
-        "type": "code",
-        "question": "【가정】Child 클래스에는 기본 생성자와 int형 매개변수를 받는 생성자가 있습니다.\n아래 예제에서, 기본 생성자에서는 Parent 클래스의 기본 생성자를 호출하고, 매개변수 생성자에서는 Child 클래스의 기본 생성자를 호출하여 초기화를 수행하는 코드를 완성하시오.",
-        "codeSnippet": "public Child() {\n    __(); // 부모 클래스의 기본 생성자 호출\n    // 추가 초기화 코드\n}\n\npublic Child(int num) {\n    __( ); // 자식 클래스의 기본 생성자 호출\n    this.num = num;\n}",
-        "answers": ["super", "this"]
-      }    
-    ,
+    {
+      "id": "u3c1",
+      "type": "code",
+      "question": "【가정】부모 클래스의 이름은 Parent, 자식 클래스의 이름은 Child입니다.\n다음 코드를 완성하여 Child 클래스가 Parent 클래스를 상속받도록 하시오.",
+      "codeSnippet": "class Child __ Parent { }",
+      "answers": ["extends"]
+    },
+    {
+      "id": "u3c2",
+      "type": "code",
+      "question": "【가정】부모 클래스(Parent)에 display() 메서드가 정의되어 있습니다.\n자식 클래스(Child)에서 display() 메서드를 오버라이딩하면서, 부모 클래스의 display() 메서드를 호출하는 코드를 완성하시오.",
+      "codeSnippet": "public void display() { return __.display(); }",
+      "answers": ["super"]
+    },
+    {
+      "id": "u3c3",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 int형 멤버 변수 value와 getValue() 메서드가 정의되어 있습니다.\n자식 클래스(Child)에서, 부모 클래스의 private 멤버에 직접 접근할 수 없으므로 getter를 통해 값을 읽어오는 코드를 완성하시오.",
+      "codeSnippet": "public int fetchValue() { return __; }",
+      "answers": ["super.getValue()"]
+    },
+    {
+      "id": "u3c4",
+      "type": "code",
+      "question": "【가정】자식 클래스(Child)의 생성자에서 부모 클래스(Parent)의 기본 생성자를 명시적으로 호출하여 초기화를 수행하고자 합니다.\n아래 코드의 빈칸을 채워 넣으시오.",
+      "codeSnippet": "public Child() { __(); }",
+      "answers": ["super"]
+    },
+    {
+      "id": "u3c5",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 final 메서드 display()가 정의되어 있습니다.\n다음 코드는 Child 클래스에서 display() 메서드를 오버라이딩하려 할 때 발생하는 컴파일 오류를 보여줍니다.\n빈칸에 올바른 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Parent {\n    public final void display() { }\n}\n\nclass Child extends Parent {\n    public void __() { }\n}",
+      "answers": ["display"]
+    },
+    {
+      "id": "u3c6",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 int형 멤버 변수 number가 정의되어 있습니다.\nChild 클래스에서, 동일한 이름의 멤버 변수를 선언하여 부모의 변수를 숨기는(shadowing) 예제를 완성하시오.",
+      "codeSnippet": "class Child extends Parent {\n    private int __ = 10;\n}",
+      "answers": ["number"]
+    },
+    {
+      "id": "u3c7",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 오버라이딩 가능한 compute() 메서드가 정의되어 있습니다.\nChild 클래스에서 compute() 메서드를 재정의하여, 부모 메서드의 결과에 5를 더한 값을 반환하는 코드를 완성하시오.",
+      "codeSnippet": "public int compute() { return __+__; }",
+      "answers": ["super.compute()", "5"]
+    },
+    {
+      "id": "u3c8",
+      "type": "code",
+      "question": "Child 클래스에서 생성자 체이닝을 사용하여, 같은 클래스 내의 다른 생성자를 호출하는 예제를 완성하시오.",
+      "codeSnippet": "public Child(int num) { __(num); }",
+      "answers": ["this"]
+    },
+    {
+      "id": "u3c9",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 정적 메서드 staticMethod()가 정의되어 있습니다.\nParent 클래스의 정적 메서드를 클래스 이름을 사용하여 호출하는 코드를 완성하시오.",
+      "codeSnippet": "Parent.__();",
+      "answers": ["staticMethod"]
+    },
+    {
+      "id": "u3c10",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 process() 메서드가 정의되어 있습니다.\nChild 클래스에서 @Override 어노테이션을 사용하여 process() 메서드를 오버라이딩하는 예제를 완성하시오.",
+      "codeSnippet": "@Override\npublic void __() { System.out.println(\"오버라이딩\"); }",
+      "answers": ["process"]
+    },
+    {
+      "id": "u3c11",
+      "type": "code",
+      "question": "【가정】부모 클래스는 Parent, 자식 클래스는 Child입니다.\n부모 타입의 참조변수에 자식 객체를 할당하는 업캐스팅 예제를 완성하시오.",
+      "codeSnippet": "Parent p = new __();",
+      "answers": ["Child"]
+    },
+    {
+      "id": "u3c12",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 protected로 선언된 display() 메서드가 존재합니다.\nChild 클래스에서 해당 메서드를 오버라이딩하는 예제를 완성하시오.",
+      "codeSnippet": "protected void __() { System.out.println(\"재정의\"); }",
+      "answers": ["display"]
+    },
+    {
+      "id": "u3c13",
+      "type": "code",
+      "question": "Child 클래스의 생성자에서 자신의 멤버 변수를 초기화할 때, 명확한 식별을 위해 사용하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public Child(int num) { __.num = num; }",
+      "answers": ["this"]
+    },
+    {
+      "id": "u3c14",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 정의된 getValue() 메서드를 재사용하여, Child 클래스에서 값을 반환하는 코드를 완성하시오.",
+      "codeSnippet": "public int fetchParentValue() { return __.__; }",
+      "answers": ["super", "getValue()"]
+    },
+    {
+      "id": "u3c15",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 show() 메서드가 정의되어 있습니다.\nChild 클래스에서 부모의 show() 메서드를 오버라이딩하지 않고 그대로 호출하기 위해, 올바른 코드를 완성하시오.",
+      "codeSnippet": "public void callShow() { __.show(); }",
+      "answers": ["super"]
+    },
+    {
+      "id": "u3c16",
+      "type": "code",
+      "question": "【가정】Parent 클래스의 생성자가 int형 매개변수를 받습니다.\nChild 클래스의 생성자에서, 부모 클래스의 해당 생성자에 매개변수를 전달하여 호출하는 코드를 완성하시오.",
+      "codeSnippet": "public Child(int num) { __(num); }",
+      "answers": ["super"]
+    },
+    {
+      "id": "u3c17",
+      "type": "code",
+      "question": "【가정】Parent 클래스의 process() 메서드는 throws Exception을 선언합니다.\nChild 클래스에서 이 메서드를 오버라이딩할 때, 부모와 동일하거나 좁은 범위의 예외를 선언하는 예제를 완성하시오.",
+      "codeSnippet": "public void process() throws __ { }",
+      "answers": ["Exception"]
+    },
+    {
+      "id": "u3c18",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 정의된 getInstance() 메서드의 반환형은 Parent입니다.\nChild 클래스에서 공변 반환형을 활용하여, getInstance() 메서드를 재정의하고 Child 타입의 객체를 반환하는 코드를 완성하시오.",
+      "codeSnippet": "public __ getInstance() { return new Child(); }",
+      "answers": ["Child"]
+    },
+    {
+      "id": "u3c19",
+      "type": "code",
+      "question": "Child 클래스에서 getNumber() 메서드를 재정의하여, 항상 42를 반환하도록 구현하는 예제를 완성하시오.",
+      "codeSnippet": "public int getNumber() { return __; }",
+      "answers": ["42"]
+    },
+    {
+      "id": "u3c20",
+      "type": "code",
+      "question": "Child 클래스에서 오버라이딩하지 않고, Parent 클래스에 정의된 compute() 메서드를 그대로 호출하여 그 결과를 반환하는 코드를 완성하시오.",
+      "codeSnippet": "public int compute() { return __.__; }",
+      "answers": ["super", "compute()"]
+    },
+    {
+      "id": "u3c21",
+      "type": "code",
+      "question": "메서드 오버로딩을 통해, 동일한 이름의 calculate() 메서드를 서로 다른 매개변수로 정의하는 예제를 완성하시오.\n(예: 첫 번째 calculate()는 int 하나를, 두 번째 calculate()는 int 두 개를 매개변수로 받음)",
+      "codeSnippet": "public int calculate(int a) { return a * 2; }\npublic int calculate(__ b, int c) { return b + c; }",
+      "answers": ["int"]
+    },
+    {
+      "id": "u3c22",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 정적 메서드 staticMethod()가 정의되어 있습니다.\nChild 클래스에서 오버라이딩 없이, Parent 클래스의 정적 메서드를 클래스 이름을 사용하여 호출하는 코드를 완성하시오.",
+      "codeSnippet": "Parent.__();",
+      "answers": ["staticMethod"]
+    },
+    {
+      "id": "u3c23",
+      "type": "code",
+      "question": "【가정】Parent 클래스에 protected 또는 public으로 선언된 int형 필드 data가 있습니다.\nChild 클래스에서 동일한 이름의 필드를 선언하여 부모의 필드를 숨기는(shadowing) 상황에서, 부모 클래스의 data 값을 참조하는 코드를 완성하시오.",
+      "codeSnippet": "public int getParentData() { return __.__; }",
+      "answers": ["super", "data"]
+    },
+    {
+      "id": "u3c24",
+      "type": "code",
+      "question": "Child 클래스에서 부모 클래스(Parent)의 멤버 메서드를 재정의하지 않고 그대로 호출하기 위해 사용하는 키워드를 코드에 채워 넣으시오.",
+      "codeSnippet": "public void invokeParent() { __.method(); }",
+      "answers": ["super"]
+    },
+    {
+      "id": "u3c25",
+      "type": "code",
+      "question": "【가정】Child 클래스에는 기본 생성자와 int형 매개변수를 받는 생성자가 있습니다.\n아래 예제에서, 기본 생성자에서는 Parent 클래스의 기본 생성자를 호출하고, 매개변수 생성자에서는 Child 클래스의 기본 생성자를 호출하여 초기화를 수행하는 코드를 완성하시오.",
+      "codeSnippet": "public Child() {\n    __(); // 부모 클래스의 기본 생성자 호출\n    // 추가 초기화 코드\n}\n\npublic Child(int num) {\n    __( ); // 자식 클래스의 기본 생성자 호출\n    this.num = num;\n}",
+      "answers": ["super", "this"]
+    },
     {
       "id": "u3s1",
       "type": "subjective",
@@ -3382,182 +3381,181 @@
       },
       "correctAnswer": "A"
     },
-      {
-        "id": "u4c1",
-        "type": "code",
-        "question": "싱글턴 디자인 패턴에서 객체 생성을 제한하기 위해, instance 필드의 접근제한자로 적절한 키워드를 채워 넣으시오.",
-        "codeSnippet": "public class Singleton {\n    __ static Singleton instance = new Singleton();\n    \n    private Singleton() { }\n    \n    public static Singleton getInstance() {\n        return instance;\n    }\n}",
-        "answers": ["private"]
-      },
-      {
-        "id": "u4c2",
-        "type": "code",
-        "question": "싱글턴 디자인 패턴에서 생성자의 접근제한자를 설정하여 외부에서 직접 객체 생성을 방지하기 위해, 생성자 선언에 적절한 접근제한자를 채워 넣으시오.",
-        "codeSnippet": "public class Singleton {\n    private static Singleton instance = new Singleton();\n    \n    __ Singleton() {\n        // 초기화 작업\n    }\n    \n    public static Singleton getInstance() {\n        return instance;\n    }\n}",
-        "answers": ["private"]
-      },
-      {
-        "id": "u4c3",
-        "type": "code",
-        "question": "데이터 은닉을 위해, 다음 코드에서 멤버 변수에 사용해야 하는 접근제한자를 채워 넣으시오.",
-        "codeSnippet": "public class Person {\n    __ String name;\n    \n    public Person(String name) {\n        this.name = name;\n    }\n    \n    public String getName() {\n        return name;\n    }\n}",
-        "answers": ["private"]
-      },
-      {
-        "id": "u4c4",
-        "type": "code",
-        "question": "다음 코드에서, 입력받은 잔액을 멤버 변수에 저장하기 위한 올바른 할당문을 채워 넣으시오.",
-        "codeSnippet": "public class Account {\n    private double balance;\n    \n    public double getBalance() {\n        return balance;\n    }\n    \n    public void setBalance(double balance) {\n        if (balance < 0) {\n            throw new IllegalArgumentException(\"잔액은 음수가 될 수 없습니다.\");\n        }\n        __.__ = __;\n    }\n}",
-        "answers": ["this", "balance", "balance"]
-      },      
-      {
-        "id": "u4c5",
-        "type": "code",
-        "question": "다음 코드에서 상수를 정의하기 위해, MAX_SIZE 변수 선언에 추가되어야 하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public class Constants {\n    public static __ int MAX_SIZE = 100;\n}",
-        "answers": ["final"]
-      },
-      {
-        "id": "u4c6",
-        "type": "code",
-        "question": "다형성을 활용하여 Animal 타입의 변수 a를 Dog 객체로 형변환 후, Dog 클래스에만 있는 메서드를 호출하는 코드에서 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Animal {\n    public void sound() {\n        System.out.println(\"Animal sound\");\n    }\n}\n\nclass Dog extends Animal {\n    public void sound() {\n        System.out.println(\"Bark\");\n    }\n    \n    public void wagTail() {\n        System.out.println(\"Wagging tail\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.sound();\n        ((Dog) a).__();\n    }\n}",
-        "answers": ["wagTail"]
-      },
-      {
-        "id": "u4c7",
-        "type": "code",
-        "question": "다음 코드에서 instanceof 연산자를 이용하여, Vehicle 타입의 변수 v가 Car 객체임을 확인 후, Car 클래스의 메서드를 호출하는 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Vehicle {}\nclass Car extends Vehicle {\n    public void drive() {\n        System.out.println(\"Driving\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Vehicle v = new Car();\n        if (v instanceof Car) {\n            Car c = (Car) v;\n            c.__();\n        }\n    }\n}",
-        "answers": ["drive"]
-      },
-      {
-        "id": "u4c8",
-        "type": "code",
-        "question": "다음 코드에서, 정적 메서드를 선언할 때 반드시 사용해야 하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "class Parent {\n    public static void display() {\n        System.out.println(\"Parent display\");\n    }\n}\n\nclass Child extends Parent {\n    public __ void display() {\n        System.out.println(\"Child display\");\n    }\n}",
-        "answers": ["static"]
-      },
-      {
-        "id": "u4c9",
-        "type": "code",
-        "question": "명시적 형변환을 사용하여 Object 타입의 변수 obj를 String 타입으로 변환하는 코드에서, 빈칸에 들어갈 타입 이름을 채워 넣으시오.",
-        "codeSnippet": "Object obj = \"Hello\";\nString str = ( __ ) obj;\nSystem.out.println(str);",
-        "answers": ["String"]
-      },
-      {
-        "id": "u4c10",
-        "type": "code",
-        "question": "다형성을 활용한 메서드 호출 예제에서, 참조 변수 s를 통해 호출되는 실제 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Shape {\n    public void draw() {\n        System.out.println(\"Drawing Shape\");\n    }\n}\n\nclass Circle extends Shape {\n    @Override\n    public void draw() {\n        System.out.println(\"Drawing Circle\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Shape s = new Circle();\n        s.__();\n    }\n}",
-        "answers": ["draw"]
-      },
-      {
-        "id": "u4c11",
-        "type": "code",
-        "question": "다음 코드에서, 멤버 변수를 외부에서 직접 접근하지 못하도록 하기 위해 적절한 접근제한자를 채워 넣으시오.",
-        "codeSnippet": "public class Bank {\n    __ int accountNumber;\n    \n    public Bank(int accountNumber) {\n        this.accountNumber = accountNumber;\n    }\n}",
-        "answers": ["private"]
-      },
-      {
-        "id": "u4c12",
-        "type": "code",
-        "question": "다음 코드에서, lazy initialization을 위한 조건문에서 instance가 아직 생성되지 않았음을 확인하기 위해, 빈칸에 들어갈 연산자를 채워 넣으시오.",
-        "codeSnippet": "public class LazySingleton {\n    private static LazySingleton instance;\n    \n    private LazySingleton() { }\n    \n    public static LazySingleton getInstance() {\n        if (instance __ null) {\n            instance = new LazySingleton();\n        }\n        return instance;\n    }\n}",
-        "answers": ["=="]
-      },
-      {
-        "id": "u4c13",
-        "type": "code",
-        "question": "다음 코드에서, 캡슐화 원칙을 적용하여, private 멤버 변수 id의 값을 반환하는 getter 메서드를 완성하시오.",
-        "codeSnippet": "public class Student {\n    private String id;\n    \n    public Student(String id) {\n        this.id = id;\n    }\n    \n    public String getId() {\n        return __;\n    }\n}",
-        "answers": ["id"]
-      },
-      {
-        "id": "u4c14",
-        "type": "code",
-        "question": "다음 코드에서, 온도를 설정하기 위한 setter 메서드 내에서 멤버 변수를 올바르게 할당하기 위해 빈칸에 들어갈 변수명을 채워 넣으시오.",
-        "codeSnippet": "public class Temperature {\n    private double celsius;\n    \n    public void setCelsius(double celsius) {\n        if (celsius < -273.15) {\n            throw new IllegalArgumentException(\"온도는 절대 영도보다 낮을 수 없습니다.\");\n        }\n        this.__ = celsius;\n    }\n}",
-        "answers": ["celsius"]
-      },
-      {
-        "id": "u4c15",
-        "type": "code",
-        "question": "다음 코드에서, 자식 클래스에서 부모 클래스의 protected 메서드를 호출하기 위해, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Parent {\n    protected void display() {\n        System.out.println(\"Parent display\");\n    }\n}\n\nclass Child extends Parent {\n    public void show() {\n        __();\n    }\n}",
-        "answers": ["display"]
-      },
-      {
-        "id": "u4c16",
-        "type": "code",
-        "question": "다음 코드에서, 객체 생성 없이 클래스 이름을 통해 정적 메서드를 호출하기 위해, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "public class MathUtil {\n    public static int add(int a, int b) {\n        return a + b;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        int sum = MathUtil.__(3, 4);\n        System.out.println(sum);\n    }\n}",
-        "answers": ["add"]
-      },
-      {
-        "id": "u4c17",
-        "type": "code",
-        "question": "다음 코드에서, 다형성을 활용하여 자식 클래스의 오버라이딩된 메서드가 호출되도록 하기 위해, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Vehicle {\n    public void move() {\n        System.out.println(\"Vehicle moves\");\n    }\n}\n\nclass Bike extends Vehicle {\n    @Override\n    public void move() {\n        System.out.println(\"Bike moves\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Vehicle v = new Bike();\n        v.__();\n    }\n}",
-        "answers": ["move"]
-      },
-      {
-        "id": "u4c18",
-        "type": "code",
-        "question": "다음 코드에서, instanceof 연산자를 사용하여 obj가 Integer 타입임을 확인하기 위해, 빈칸에 들어갈 타입명을 채워 넣으시오.",
-        "codeSnippet": "public class Test {\n    public static void main(String[] args) {\n        Object obj = new Integer(10);\n        if (obj instanceof __) {\n            Integer num = (Integer) obj;\n            System.out.println(num);\n        }\n    }\n}",
-        "answers": ["Integer"]
-      },
-      {
-        "id": "u4c19",
-        "type": "code",
-        "question": "다음 코드에서, 다형성을 활용하여 부모 클래스 타입의 변수 f를 통해 호출되는 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "class Fruit {\n    public void taste() {\n        System.out.println(\"Generic fruit taste\");\n    }\n}\n\nclass Apple extends Fruit {\n    @Override\n    public void taste() {\n        System.out.println(\"Sweet apple\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Apple a = new Apple();\n        Fruit f = a; // upcasting\n        f.__();\n    }\n}",
-        "answers": ["taste"]
-      },
-      {
-        "id": "u4c20",
-        "type": "code",
-        "question": "다음 Singleton 패턴 구현 예제에서, 멤버 변수 SIZE의 초기화 순서를 보장하기 위해, 빈칸에 들어갈 키워드를 채워 넣으시오.",
-        "codeSnippet": "public class Singleton {\n    public __ static int SIZE = 10;\n    private int[] array;\n    \n    private static Singleton instance = new Singleton();\n    \n    private Singleton() {\n        array = new int[SIZE];\n    }\n    \n    public static Singleton getInstance() {\n        return instance;\n    }\n    \n    public int getArrayLength() {\n        return array.length;\n    }\n}",
-        "answers": ["final"]
-      },
-      {
-        "id": "u4c21",
-        "type": "code",
-        "question": "다음 생성자에서, 멤버 변수와 매개변수를 구분하기 위해 빈칸에 들어갈 키워드를 채워 넣으시오.",
-        "codeSnippet": "public class Person {\n    private String name;\n    \n    public Person(String name) {\n        __.name = name;\n    }\n}",
-        "answers": ["this"]
-      },
-      {
-        "id": "u4c22",
-        "type": "code",
-        "question": "데이터 보호를 위해, 멤버 변수 password의 접근제한자로 적절한 키워드를 채워 넣으시오.",
-        "codeSnippet": "public class User {\n    __ String password;\n    \n    public String getPassword() {\n        return password;\n    }\n}",
-        "answers": ["private"]
-      },
-      {
-        "id": "u4c23",
-        "type": "code",
-        "question": "JDK 16부터 도입된 instanceof 패턴 매칭 문법을 사용하여, obj가 String 타입일 때 변수를 s로 선언하는 코드에서 빈칸에 들어갈 내용을 채워 넣으시오.",
-        "codeSnippet": "public class Test {\n    public static void main(String[] args) {\n        Object obj = \"Hello\";\n        if (obj instanceof __) {\n            System.out.println(s.length());\n        }\n    }\n}",
-        "answers": ["String s"]
-      },
-      {
-        "id": "u4c24",
-        "type": "code",
-        "question": "다음 코드에서, 자식 클래스 Dog의 생성자에서 부모 클래스의 생성자를 호출하기 위해, 빈칸에 들어갈 키워드를 채워 넣으시오.",
-        "codeSnippet": "class Animal {\n    public Animal(String name) {\n        System.out.println(\"Animal: \" + name);\n    }\n}\n\nclass Dog extends Animal {\n    public Dog(String name) {\n        __(name);\n    }\n}",
-        "answers": ["super"]
-      },
-      {
-        "id": "u4c25",
-        "type": "code",
-        "question": "다음 코드에서, 메서드 오버라이딩 시 부모 클래스보다 접근 제한자를 축소할 수 없음을 보이기 위해, 빈칸에 들어갈 키워드를 채워 넣으시오.",
-        "codeSnippet": "class Base {\n    public void perform() {\n        System.out.println(\"Base perform\");\n    }\n}\n\nclass Derived extends Base {\n    __ void perform() {\n        System.out.println(\"Derived perform\");\n    }\n}",
-        "answers": ["public"]
-      }
-    ,    
+    {
+      "id": "u4c1",
+      "type": "code",
+      "question": "싱글턴 디자인 패턴에서 객체 생성을 제한하기 위해, instance 필드의 접근제한자로 적절한 키워드를 채워 넣으시오.",
+      "codeSnippet": "public class Singleton {\n    __ static Singleton instance = new Singleton();\n    \n    private Singleton() { }\n    \n    public static Singleton getInstance() {\n        return instance;\n    }\n}",
+      "answers": ["private"]
+    },
+    {
+      "id": "u4c2",
+      "type": "code",
+      "question": "싱글턴 디자인 패턴에서 생성자의 접근제한자를 설정하여 외부에서 직접 객체 생성을 방지하기 위해, 생성자 선언에 적절한 접근제한자를 채워 넣으시오.",
+      "codeSnippet": "public class Singleton {\n    private static Singleton instance = new Singleton();\n    \n    __ Singleton() {\n        // 초기화 작업\n    }\n    \n    public static Singleton getInstance() {\n        return instance;\n    }\n}",
+      "answers": ["private"]
+    },
+    {
+      "id": "u4c3",
+      "type": "code",
+      "question": "데이터 은닉을 위해, 다음 코드에서 멤버 변수에 사용해야 하는 접근제한자를 채워 넣으시오.",
+      "codeSnippet": "public class Person {\n    __ String name;\n    \n    public Person(String name) {\n        this.name = name;\n    }\n    \n    public String getName() {\n        return name;\n    }\n}",
+      "answers": ["private"]
+    },
+    {
+      "id": "u4c4",
+      "type": "code",
+      "question": "다음 코드에서, 입력받은 잔액을 멤버 변수에 저장하기 위한 올바른 할당문을 채워 넣으시오.",
+      "codeSnippet": "public class Account {\n    private double balance;\n    \n    public double getBalance() {\n        return balance;\n    }\n    \n    public void setBalance(double balance) {\n        if (balance < 0) {\n            throw new IllegalArgumentException(\"잔액은 음수가 될 수 없습니다.\");\n        }\n        __.__ = __;\n    }\n}",
+      "answers": ["this", "balance", "balance"]
+    },
+    {
+      "id": "u4c5",
+      "type": "code",
+      "question": "다음 코드에서 상수를 정의하기 위해, MAX_SIZE 변수 선언에 추가되어야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public class Constants {\n    public static __ int MAX_SIZE = 100;\n}",
+      "answers": ["final"]
+    },
+    {
+      "id": "u4c6",
+      "type": "code",
+      "question": "다형성을 활용하여 Animal 타입의 변수 a를 Dog 객체로 형변환 후, Dog 클래스에만 있는 메서드를 호출하는 코드에서 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Animal {\n    public void sound() {\n        System.out.println(\"Animal sound\");\n    }\n}\n\nclass Dog extends Animal {\n    public void sound() {\n        System.out.println(\"Bark\");\n    }\n    \n    public void wagTail() {\n        System.out.println(\"Wagging tail\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.sound();\n        ((Dog) a).__();\n    }\n}",
+      "answers": ["wagTail"]
+    },
+    {
+      "id": "u4c7",
+      "type": "code",
+      "question": "다음 코드에서 instanceof 연산자를 이용하여, Vehicle 타입의 변수 v가 Car 객체임을 확인 후, Car 클래스의 메서드를 호출하는 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Vehicle {}\nclass Car extends Vehicle {\n    public void drive() {\n        System.out.println(\"Driving\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Vehicle v = new Car();\n        if (v instanceof Car) {\n            Car c = (Car) v;\n            c.__();\n        }\n    }\n}",
+      "answers": ["drive"]
+    },
+    {
+      "id": "u4c8",
+      "type": "code",
+      "question": "다음 코드에서, 정적 메서드를 선언할 때 반드시 사용해야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "class Parent {\n    public static void display() {\n        System.out.println(\"Parent display\");\n    }\n}\n\nclass Child extends Parent {\n    public __ void display() {\n        System.out.println(\"Child display\");\n    }\n}",
+      "answers": ["static"]
+    },
+    {
+      "id": "u4c9",
+      "type": "code",
+      "question": "명시적 형변환을 사용하여 Object 타입의 변수 obj를 String 타입으로 변환하는 코드에서, 빈칸에 들어갈 타입 이름을 채워 넣으시오.",
+      "codeSnippet": "Object obj = \"Hello\";\nString str = ( __ ) obj;\nSystem.out.println(str);",
+      "answers": ["String"]
+    },
+    {
+      "id": "u4c10",
+      "type": "code",
+      "question": "다형성을 활용한 메서드 호출 예제에서, 참조 변수 s를 통해 호출되는 실제 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Shape {\n    public void draw() {\n        System.out.println(\"Drawing Shape\");\n    }\n}\n\nclass Circle extends Shape {\n    @Override\n    public void draw() {\n        System.out.println(\"Drawing Circle\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Shape s = new Circle();\n        s.__();\n    }\n}",
+      "answers": ["draw"]
+    },
+    {
+      "id": "u4c11",
+      "type": "code",
+      "question": "다음 코드에서, 멤버 변수를 외부에서 직접 접근하지 못하도록 하기 위해 적절한 접근제한자를 채워 넣으시오.",
+      "codeSnippet": "public class Bank {\n    __ int accountNumber;\n    \n    public Bank(int accountNumber) {\n        this.accountNumber = accountNumber;\n    }\n}",
+      "answers": ["private"]
+    },
+    {
+      "id": "u4c12",
+      "type": "code",
+      "question": "다음 코드에서, lazy initialization을 위한 조건문에서 instance가 아직 생성되지 않았음을 확인하기 위해, 빈칸에 들어갈 연산자를 채워 넣으시오.",
+      "codeSnippet": "public class LazySingleton {\n    private static LazySingleton instance;\n    \n    private LazySingleton() { }\n    \n    public static LazySingleton getInstance() {\n        if (instance __ null) {\n            instance = new LazySingleton();\n        }\n        return instance;\n    }\n}",
+      "answers": ["=="]
+    },
+    {
+      "id": "u4c13",
+      "type": "code",
+      "question": "다음 코드에서, 캡슐화 원칙을 적용하여, private 멤버 변수 id의 값을 반환하는 getter 메서드를 완성하시오.",
+      "codeSnippet": "public class Student {\n    private String id;\n    \n    public Student(String id) {\n        this.id = id;\n    }\n    \n    public String getId() {\n        return __;\n    }\n}",
+      "answers": ["id"]
+    },
+    {
+      "id": "u4c14",
+      "type": "code",
+      "question": "다음 코드에서, 온도를 설정하기 위한 setter 메서드 내에서 멤버 변수를 올바르게 할당하기 위해 빈칸에 들어갈 변수명을 채워 넣으시오.",
+      "codeSnippet": "public class Temperature {\n    private double celsius;\n    \n    public void setCelsius(double celsius) {\n        if (celsius < -273.15) {\n            throw new IllegalArgumentException(\"온도는 절대 영도보다 낮을 수 없습니다.\");\n        }\n        this.__ = celsius;\n    }\n}",
+      "answers": ["celsius"]
+    },
+    {
+      "id": "u4c15",
+      "type": "code",
+      "question": "다음 코드에서, 자식 클래스에서 부모 클래스의 protected 메서드를 호출하기 위해, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Parent {\n    protected void display() {\n        System.out.println(\"Parent display\");\n    }\n}\n\nclass Child extends Parent {\n    public void show() {\n        __();\n    }\n}",
+      "answers": ["display"]
+    },
+    {
+      "id": "u4c16",
+      "type": "code",
+      "question": "다음 코드에서, 객체 생성 없이 클래스 이름을 통해 정적 메서드를 호출하기 위해, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "public class MathUtil {\n    public static int add(int a, int b) {\n        return a + b;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        int sum = MathUtil.__(3, 4);\n        System.out.println(sum);\n    }\n}",
+      "answers": ["add"]
+    },
+    {
+      "id": "u4c17",
+      "type": "code",
+      "question": "다음 코드에서, 다형성을 활용하여 자식 클래스의 오버라이딩된 메서드가 호출되도록 하기 위해, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Vehicle {\n    public void move() {\n        System.out.println(\"Vehicle moves\");\n    }\n}\n\nclass Bike extends Vehicle {\n    @Override\n    public void move() {\n        System.out.println(\"Bike moves\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Vehicle v = new Bike();\n        v.__();\n    }\n}",
+      "answers": ["move"]
+    },
+    {
+      "id": "u4c18",
+      "type": "code",
+      "question": "다음 코드에서, instanceof 연산자를 사용하여 obj가 Integer 타입임을 확인하기 위해, 빈칸에 들어갈 타입명을 채워 넣으시오.",
+      "codeSnippet": "public class Test {\n    public static void main(String[] args) {\n        Object obj = new Integer(10);\n        if (obj instanceof __) {\n            Integer num = (Integer) obj;\n            System.out.println(num);\n        }\n    }\n}",
+      "answers": ["Integer"]
+    },
+    {
+      "id": "u4c19",
+      "type": "code",
+      "question": "다음 코드에서, 다형성을 활용하여 부모 클래스 타입의 변수 f를 통해 호출되는 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "class Fruit {\n    public void taste() {\n        System.out.println(\"Generic fruit taste\");\n    }\n}\n\nclass Apple extends Fruit {\n    @Override\n    public void taste() {\n        System.out.println(\"Sweet apple\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Apple a = new Apple();\n        Fruit f = a; // upcasting\n        f.__();\n    }\n}",
+      "answers": ["taste"]
+    },
+    {
+      "id": "u4c20",
+      "type": "code",
+      "question": "다음 Singleton 패턴 구현 예제에서, 멤버 변수 SIZE의 초기화 순서를 보장하기 위해, 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "public class Singleton {\n    public __ static int SIZE = 10;\n    private int[] array;\n    \n    private static Singleton instance = new Singleton();\n    \n    private Singleton() {\n        array = new int[SIZE];\n    }\n    \n    public static Singleton getInstance() {\n        return instance;\n    }\n    \n    public int getArrayLength() {\n        return array.length;\n    }\n}",
+      "answers": ["final"]
+    },
+    {
+      "id": "u4c21",
+      "type": "code",
+      "question": "다음 생성자에서, 멤버 변수와 매개변수를 구분하기 위해 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "public class Person {\n    private String name;\n    \n    public Person(String name) {\n        __.name = name;\n    }\n}",
+      "answers": ["this"]
+    },
+    {
+      "id": "u4c22",
+      "type": "code",
+      "question": "데이터 보호를 위해, 멤버 변수 password의 접근제한자로 적절한 키워드를 채워 넣으시오.",
+      "codeSnippet": "public class User {\n    __ String password;\n    \n    public String getPassword() {\n        return password;\n    }\n}",
+      "answers": ["private"]
+    },
+    {
+      "id": "u4c23",
+      "type": "code",
+      "question": "JDK 16부터 도입된 instanceof 패턴 매칭 문법을 사용하여, obj가 String 타입일 때 변수를 s로 선언하는 코드에서 빈칸에 들어갈 내용을 채워 넣으시오.",
+      "codeSnippet": "public class Test {\n    public static void main(String[] args) {\n        Object obj = \"Hello\";\n        if (obj instanceof __) {\n            System.out.println(s.length());\n        }\n    }\n}",
+      "answers": ["String s"]
+    },
+    {
+      "id": "u4c24",
+      "type": "code",
+      "question": "다음 코드에서, 자식 클래스 Dog의 생성자에서 부모 클래스의 생성자를 호출하기 위해, 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "class Animal {\n    public Animal(String name) {\n        System.out.println(\"Animal: \" + name);\n    }\n}\n\nclass Dog extends Animal {\n    public Dog(String name) {\n        __(name);\n    }\n}",
+      "answers": ["super"]
+    },
+    {
+      "id": "u4c25",
+      "type": "code",
+      "question": "다음 코드에서, 메서드 오버라이딩 시 부모 클래스보다 접근 제한자를 축소할 수 없음을 보이기 위해, 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "class Base {\n    public void perform() {\n        System.out.println(\"Base perform\");\n    }\n}\n\nclass Derived extends Base {\n    __ void perform() {\n        System.out.println(\"Derived perform\");\n    }\n}",
+      "answers": ["public"]
+    },
     {
       "id": "u4s1",
       "type": "subjective",
@@ -4310,184 +4308,183 @@
       },
       "correctAnswer": "D"
     },
-      {
-        "id": "u5c1",
-        "type": "code",
-        "question": "Abstract 클래스로 선언하기 위해 클래스 선언부에 추가해야 하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public __ class Vehicle {\n    // 공통 멤버와 메서드\n}",
-        "answers": ["abstract"]
-      },
-      {
-        "id": "u5c2",
-        "type": "code",
-        "question": "추상 메서드는 구현부가 없으므로, 메서드 선언 후 빈 구현 대신 사용할 키워드를 채워 넣으시오.",
-        "codeSnippet": "public abstract class Vehicle {\n    public __ void addFuel();\n}",
-        "answers": ["abstract"]
-      },
-      {
-        "id": "u5c3",
-        "type": "code",
-        "question": "추상 클래스를 상속받은 자식 클래스에서, 추상 메서드를 재정의할 때 사용해야 하는 접근제한자를 채워 넣으시오.",
-        "codeSnippet": "public abstract class Vehicle {\n    public abstract void addFuel();\n}\n\npublic class ElectricCar extends Vehicle {\n    @Override\n    __ void addFuel() {\n        System.out.println(\"Charging...\");\n    }\n}",
-        "answers": ["public"]
-      },
-      {
-        "id": "u5c4",
-        "type": "code",
-        "question": "인터페이스에서 메서드를 선언할 때, 생략 가능한 키워드 대신 명시적으로 작성할 수 있는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface Drivable {\n    ____ void drive();\n}",
-        "answers": ["public","abstract"]
-      },
-      {
-        "id": "u5c5",
-        "type": "code",
-        "question": "인터페이스 내의 변수는 암묵적으로 상수로 취급되는데, 이를 명시하기 위해 추가할 수 있는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface Config {\n    ______ int TIMEOUT = 30;\n}",
-        "answers": ["public","static","final"]
-      },
-      {
-        "id": "u5c6",
-        "type": "code",
-        "question": "클래스가 인터페이스를 구현할 때 사용하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface Flyable {\n    void fly();\n}\n\npublic class Airplane __ Flyable {\n    @Override\n    public void fly() {\n        System.out.println(\"Flying\");\n    }\n}",
-        "answers": ["implements"]
-      },
-      {
-        "id": "u5c7",
-        "type": "code",
-        "question": "추상 클래스 Vehicle을 상속받아, 구체적인 객체를 생성할 수 있는 DieselSUV 클래스를 사용하여 Vehicle 타입의 참조변수를 초기화하시오.",
-        "codeSnippet": "public abstract class Vehicle {\n    public abstract void addFuel();\n}\n\npublic class DieselSUV extends Vehicle {\n    @Override\n    public void addFuel() {\n        System.out.println(\"Adding diesel\");\n    }\n}\n\npublic class VehicleTest {\n    public static void main(String[] args) {\n        Vehicle v = new __();\n        v.addFuel();\n    }\n}",
-        "answers": ["DieselSUV"]
-      },
-      {
-        "id": "u5c8",
-        "type": "code",
-        "question": "인터페이스에서 기본 메서드(default method)를 정의하기 위해 메서드 선언부에 추가할 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface Operable {\n    __ void start() {\n        System.out.println(\"Starting operation\");\n    }\n}",
-        "answers": ["default"]
-      },
-      {
-        "id": "u5c9",
-        "type": "code",
-        "question": "인터페이스에 정의된 정적 메서드를 호출할 때 사용하는 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "public interface Calculator {\n    static int add(int a, int b) {\n        return a + b;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        int sum = Calculator.__(3, 4);\n        System.out.println(sum);\n    }\n}",
-        "answers": ["add"]
-      },
-      {
-        "id": "u5c10",
-        "type": "code",
-        "question": "두 개 이상의 인터페이스를 구현할 때 사용하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface Printable {\n    void print();\n}\n\npublic interface Scannable {\n    void scan();\n}\n\npublic class MultiFunctionPrinter __ Printable, Scannable {\n    @Override\n    public void print() {\n        System.out.println(\"Printing\");\n    }\n    @Override\n    public void scan() {\n        System.out.println(\"Scanning\");\n    }\n}",
-        "answers": ["implements"]
-      },
+    {
+      "id": "u5c1",
+      "type": "code",
+      "question": "Abstract 클래스로 선언하기 위해 클래스 선언부에 추가해야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public __ class Vehicle {\n    // 공통 멤버와 메서드\n}",
+      "answers": ["abstract"]
+    },
+    {
+      "id": "u5c2",
+      "type": "code",
+      "question": "추상 메서드는 구현부가 없으므로, 메서드 선언 후 빈 구현 대신 사용할 키워드를 채워 넣으시오.",
+      "codeSnippet": "public abstract class Vehicle {\n    public __ void addFuel();\n}",
+      "answers": ["abstract"]
+    },
+    {
+      "id": "u5c3",
+      "type": "code",
+      "question": "추상 클래스를 상속받은 자식 클래스에서, 추상 메서드를 재정의할 때 사용해야 하는 접근제한자를 채워 넣으시오.",
+      "codeSnippet": "public abstract class Vehicle {\n    public abstract void addFuel();\n}\n\npublic class ElectricCar extends Vehicle {\n    @Override\n    __ void addFuel() {\n        System.out.println(\"Charging...\");\n    }\n}",
+      "answers": ["public"]
+    },
+    {
+      "id": "u5c4",
+      "type": "code",
+      "question": "인터페이스에서 메서드를 선언할 때, 생략 가능한 키워드 대신 명시적으로 작성할 수 있는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface Drivable {\n    ____ void drive();\n}",
+      "answers": ["public", "abstract"]
+    },
+    {
+      "id": "u5c5",
+      "type": "code",
+      "question": "인터페이스 내의 변수는 암묵적으로 상수로 취급되는데, 이를 명시하기 위해 추가할 수 있는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface Config {\n    ______ int TIMEOUT = 30;\n}",
+      "answers": ["public", "static", "final"]
+    },
+    {
+      "id": "u5c6",
+      "type": "code",
+      "question": "클래스가 인터페이스를 구현할 때 사용하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface Flyable {\n    void fly();\n}\n\npublic class Airplane __ Flyable {\n    @Override\n    public void fly() {\n        System.out.println(\"Flying\");\n    }\n}",
+      "answers": ["implements"]
+    },
+    {
+      "id": "u5c7",
+      "type": "code",
+      "question": "추상 클래스 Vehicle을 상속받아, 구체적인 객체를 생성할 수 있는 DieselSUV 클래스를 사용하여 Vehicle 타입의 참조변수를 초기화하시오.",
+      "codeSnippet": "public abstract class Vehicle {\n    public abstract void addFuel();\n}\n\npublic class DieselSUV extends Vehicle {\n    @Override\n    public void addFuel() {\n        System.out.println(\"Adding diesel\");\n    }\n}\n\npublic class VehicleTest {\n    public static void main(String[] args) {\n        Vehicle v = new __();\n        v.addFuel();\n    }\n}",
+      "answers": ["DieselSUV"]
+    },
+    {
+      "id": "u5c8",
+      "type": "code",
+      "question": "인터페이스에서 기본 메서드(default method)를 정의하기 위해 메서드 선언부에 추가할 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface Operable {\n    __ void start() {\n        System.out.println(\"Starting operation\");\n    }\n}",
+      "answers": ["default"]
+    },
+    {
+      "id": "u5c9",
+      "type": "code",
+      "question": "인터페이스에 정의된 정적 메서드를 호출할 때 사용하는 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "public interface Calculator {\n    static int add(int a, int b) {\n        return a + b;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        int sum = Calculator.__(3, 4);\n        System.out.println(sum);\n    }\n}",
+      "answers": ["add"]
+    },
+    {
+      "id": "u5c10",
+      "type": "code",
+      "question": "두 개 이상의 인터페이스를 구현할 때 사용하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface Printable {\n    void print();\n}\n\npublic interface Scannable {\n    void scan();\n}\n\npublic class MultiFunctionPrinter __ Printable, Scannable {\n    @Override\n    public void print() {\n        System.out.println(\"Printing\");\n    }\n    @Override\n    public void scan() {\n        System.out.println(\"Scanning\");\n    }\n}",
+      "answers": ["implements"]
+    },
 
-      {
-         "id": "u5c11",
-         "type": "code",
-          "question": "여러 인터페이스에서 동일한 기본 메서드가 정의된 경우, 특정 인터페이스의 기본 메서드를 호출하기 위해 필요한 구문을 채워 넣으시오.",
-          "codeSnippet": "public interface A {\n    default void show() {\n        System.out.println(\"A\");\n    }\n}\n\npublic interface B {\n    default void show() {\n        System.out.println(\"B\");\n    }\n}\n\npublic class Test implements A, B {\n    @Override\n    public void show() {\n        __.__.show(); // 호출: 인터페이스 A의 기본 메서드\n    }\n}\n",
-          "answers": ["A", "super"]
-       },
-        {
-          "id": "u5c12",
-          "type": "code",
-          "question": "추상 클래스의 메서드 호출 시, 상속받은 구체적 구현을 명시적으로 호출하기 위해 사용해야 하는 키워드를 채워 넣으시오.",
-          "codeSnippet": "public abstract class Machine {\n    public void start() {\n        System.out.println(\"Machine starting\");\n    }\n    public abstract void stop();\n}\n\npublic class Computer extends Machine {\n    @Override\n    public void stop() {\n        System.out.println(\"Computer stopping\");\n    }\n    \n    public void restart() {\n        __.__; // 부모 클래스의 start() 메서드 호출\n        stop();\n    }\n}\n",
-          "answers": ["super", "start()"]
-        },
-      
-      {
-        "id": "u5c13",
-        "type": "code",
-        "question": "추상 메서드 선언 시, 구현부 대신 사용해야 하는 기호를 채워 넣으시오.",
-        "codeSnippet": "public abstract class Animal {\n    public abstract void makeSound() __\n}",
-        "answers": [";"]
-      },
-      {
-        "id": "u5c14",
-        "type": "code",
-        "question": "클래스가 인터페이스를 구현할 때, 인터페이스 이름 뒤에 추가해야 하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface Operable {\n    void operate();\n}\n\npublic class Machine __ Operable {\n    @Override\n    public void operate() {\n        System.out.println(\"Operating machine\");\n    }\n}",
-        "answers": ["implements"]
-      },
-      {
-        "id": "u5c15",
-        "type": "code",
-        "question": "다형성을 활용하여, 추상 클래스의 구체적 메서드를 호출하는 예제에서 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "public abstract class Shape {\n    public abstract double area();\n    public void display() {\n        System.out.println(\"Displaying shape\");\n    }\n}\n\npublic class Circle extends Shape {\n    private double radius;\n    public Circle(double radius) {\n        this.radius = radius;\n    }\n    @Override\n    public double area() {\n        return Math.PI * radius * radius;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Shape s = new Circle(5);\n        System.out.println(\"Area: \" + s.area());\n        s.__();\n    }\n}\n",
-        "answers": ["display"]
-      },
-      {
-        "id": "u5c16",
-        "type": "code",
-        "question": "인터페이스 상속 시, 상위 인터페이스의 메서드만 호출할 수 있는 상황에서, 변수 a로 호출 가능한 메서드를 채워 넣으시오.",
-        "codeSnippet": "public interface A {\n    void methodA();\n}\npublic interface B extends A {\n    void methodB();\n}\npublic class C implements B {\n    @Override\n    public void methodA() {\n        System.out.println(\"A\");\n    }\n    @Override\n    public void methodB() {\n        System.out.println(\"B\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A a = new C();\n        a.__();\n    }\n}\n",
-        "answers": ["methodA"]
-      },
-      {
-        "id": "u5c17",
-        "type": "code",
-        "question": "추상 클래스를 상속받은 구체 클래스의 메서드를 호출하는 예제에서, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "public abstract class Appliance {\n    public abstract void turnOn();\n}\n\npublic class Fan extends Appliance {\n    @Override\n    public void turnOn() {\n        System.out.println(\"Fan is on\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Appliance app = new Fan();\n        app.__();\n    }\n}\n",
-        "answers": ["turnOn"]
-      },
-      {
-        "id": "u5c18",
-        "type": "code",
-        "question": "여러 인터페이스에서 동일한 기본 메서드가 정의된 경우, 특정 인터페이스의 메서드를 호출하기 위한 구문을 채워 넣으시오.",
-        "codeSnippet": "public interface X {\n    default void action() {\n        System.out.println(\"Action from X\");\n    }\n}\npublic interface Y {\n    default void action() {\n        System.out.println(\"Action from Y\");\n    }\n}\npublic class Z implements X, Y {\n    @Override\n    public void action() {\n        // 충돌 해결: X의 기본 메서드 호출\n        __.action();\n    }\n}\n",
-        "answers": ["X.super"]
-      },
-      {
-        "id": "u5c19",
-        "type": "code",
-        "question": "추상 클래스의 생성자에서, 자식 클래스의 생성자 호출을 위해 사용해야 하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public abstract class Tool {\n    protected String name;\n    public Tool(String name) {\n        this.name = name;\n    }\n}\n\npublic class Hammer extends Tool {\n    public Hammer(String name) {\n        __;\n    }\n}\n",
-        "answers": ["super(name)"]
-      },
-      {
-        "id": "u5c20",
-        "type": "code",
-        "question": "인터페이스를 타입으로 사용하여, 구현 클래스의 메서드를 호출하는 예제에서 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
-        "codeSnippet": "public interface Drivable {\n    void drive();\n}\n\npublic class Car implements Drivable {\n    @Override\n    public void drive() {\n        System.out.println(\"Car driving\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Drivable d = new Car();\n        d.__();\n    }\n}\n",
-        "answers": ["drive"]
-      },
-      {
-        "id": "u5c21",
-        "type": "code",
-        "question": "추상 클래스 Animal을 상속받은 자식 클래스에서, 추상 메서드를 재정의할 때 올바른 접근 제한자를 채워 넣으시오.",
-        "codeSnippet": "public abstract class Animal {\n    public abstract void makeSound();\n}\n\npublic class Cat extends Animal {\n    @Override\n    public __ void makeSound() {\n        System.out.println(\"Meow\");\n    }\n}\n",
-        "answers": ["public"]
-      },
-      {
-        "id": "u5c22",
-        "type": "code",
-        "question": "인터페이스를 선언할 때, 인터페이스임을 나타내는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public __ Drawable {\n    void draw();\n}\n",
-        "answers": ["interface"]
-      },
-      {
-        "id": "u5c23",
-        "type": "code",
-        "question": "인터페이스 상속 시, 하위 인터페이스가 상위 인터페이스의 기능을 포함하도록 선언할 때 사용하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public interface First {\n    void firstMethod();\n}\n\npublic interface Second {\n    void secondMethod();\n}\n\npublic interface Combined __ First, Second {\n    // Combined 인터페이스는 First와 Second의 기능을 모두 포함함\n}\n",
-        "answers": ["extends"]
-      },
-      {
-        "id": "u5c24",
-        "type": "code",
-        "question": "추상 클래스의 자식 클래스에서, 부모 클래스의 생성자를 호출하기 위해 사용해야 하는 키워드를 채워 넣으시오.",
-        "codeSnippet": "public abstract class AbstractEntity {\n    protected int id;\n    public AbstractEntity(int id) {\n        this.id = id;\n    }\n}\n\npublic class UserEntity extends AbstractEntity {\n    public UserEntity(int id) {\n        __;\n    }\n}\n",
-        "answers": ["super(id)"]
-      },
-      {
-        "id": "u5c25",
-        "type": "code",
-        "question": "인터페이스 내에 메서드를 정의할 때, 모든 메서드가 암묵적으로 갖는 접근제한자를 명시적으로 작성하려면 어떤 키워드를 사용해야 하는지 채워 넣으시오.",
-        "codeSnippet": "public interface Sample {\n    ____ void execute();\n}\n",
-        "answers": ["public","abstract"]
-      }
-    ,
+    {
+      "id": "u5c11",
+      "type": "code",
+      "question": "여러 인터페이스에서 동일한 기본 메서드가 정의된 경우, 특정 인터페이스의 기본 메서드를 호출하기 위해 필요한 구문을 채워 넣으시오.",
+      "codeSnippet": "public interface A {\n    default void show() {\n        System.out.println(\"A\");\n    }\n}\n\npublic interface B {\n    default void show() {\n        System.out.println(\"B\");\n    }\n}\n\npublic class Test implements A, B {\n    @Override\n    public void show() {\n        __.__.show(); // 호출: 인터페이스 A의 기본 메서드\n    }\n}\n",
+      "answers": ["A", "super"]
+    },
+    {
+      "id": "u5c12",
+      "type": "code",
+      "question": "추상 클래스의 메서드 호출 시, 상속받은 구체적 구현을 명시적으로 호출하기 위해 사용해야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public abstract class Machine {\n    public void start() {\n        System.out.println(\"Machine starting\");\n    }\n    public abstract void stop();\n}\n\npublic class Computer extends Machine {\n    @Override\n    public void stop() {\n        System.out.println(\"Computer stopping\");\n    }\n    \n    public void restart() {\n        __.__; // 부모 클래스의 start() 메서드 호출\n        stop();\n    }\n}\n",
+      "answers": ["super", "start()"]
+    },
+
+    {
+      "id": "u5c13",
+      "type": "code",
+      "question": "추상 메서드 선언 시, 구현부 대신 사용해야 하는 기호를 채워 넣으시오.",
+      "codeSnippet": "public abstract class Animal {\n    public abstract void makeSound() __\n}",
+      "answers": [";"]
+    },
+    {
+      "id": "u5c14",
+      "type": "code",
+      "question": "클래스가 인터페이스를 구현할 때, 인터페이스 이름 뒤에 추가해야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface Operable {\n    void operate();\n}\n\npublic class Machine __ Operable {\n    @Override\n    public void operate() {\n        System.out.println(\"Operating machine\");\n    }\n}",
+      "answers": ["implements"]
+    },
+    {
+      "id": "u5c15",
+      "type": "code",
+      "question": "다형성을 활용하여, 추상 클래스의 구체적 메서드를 호출하는 예제에서 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "public abstract class Shape {\n    public abstract double area();\n    public void display() {\n        System.out.println(\"Displaying shape\");\n    }\n}\n\npublic class Circle extends Shape {\n    private double radius;\n    public Circle(double radius) {\n        this.radius = radius;\n    }\n    @Override\n    public double area() {\n        return Math.PI * radius * radius;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Shape s = new Circle(5);\n        System.out.println(\"Area: \" + s.area());\n        s.__();\n    }\n}\n",
+      "answers": ["display"]
+    },
+    {
+      "id": "u5c16",
+      "type": "code",
+      "question": "인터페이스 상속 시, 상위 인터페이스의 메서드만 호출할 수 있는 상황에서, 변수 a로 호출 가능한 메서드를 채워 넣으시오.",
+      "codeSnippet": "public interface A {\n    void methodA();\n}\npublic interface B extends A {\n    void methodB();\n}\npublic class C implements B {\n    @Override\n    public void methodA() {\n        System.out.println(\"A\");\n    }\n    @Override\n    public void methodB() {\n        System.out.println(\"B\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A a = new C();\n        a.__();\n    }\n}\n",
+      "answers": ["methodA"]
+    },
+    {
+      "id": "u5c17",
+      "type": "code",
+      "question": "추상 클래스를 상속받은 구체 클래스의 메서드를 호출하는 예제에서, 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "public abstract class Appliance {\n    public abstract void turnOn();\n}\n\npublic class Fan extends Appliance {\n    @Override\n    public void turnOn() {\n        System.out.println(\"Fan is on\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Appliance app = new Fan();\n        app.__();\n    }\n}\n",
+      "answers": ["turnOn"]
+    },
+    {
+      "id": "u5c18",
+      "type": "code",
+      "question": "여러 인터페이스에서 동일한 기본 메서드가 정의된 경우, 특정 인터페이스의 메서드를 호출하기 위한 구문을 채워 넣으시오.",
+      "codeSnippet": "public interface X {\n    default void action() {\n        System.out.println(\"Action from X\");\n    }\n}\npublic interface Y {\n    default void action() {\n        System.out.println(\"Action from Y\");\n    }\n}\npublic class Z implements X, Y {\n    @Override\n    public void action() {\n        // 충돌 해결: X의 기본 메서드 호출\n        __.action();\n    }\n}\n",
+      "answers": ["X.super"]
+    },
+    {
+      "id": "u5c19",
+      "type": "code",
+      "question": "추상 클래스의 생성자에서, 자식 클래스의 생성자 호출을 위해 사용해야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public abstract class Tool {\n    protected String name;\n    public Tool(String name) {\n        this.name = name;\n    }\n}\n\npublic class Hammer extends Tool {\n    public Hammer(String name) {\n        __;\n    }\n}\n",
+      "answers": ["super(name)"]
+    },
+    {
+      "id": "u5c20",
+      "type": "code",
+      "question": "인터페이스를 타입으로 사용하여, 구현 클래스의 메서드를 호출하는 예제에서 빈칸에 들어갈 메서드 이름을 채워 넣으시오.",
+      "codeSnippet": "public interface Drivable {\n    void drive();\n}\n\npublic class Car implements Drivable {\n    @Override\n    public void drive() {\n        System.out.println(\"Car driving\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Drivable d = new Car();\n        d.__();\n    }\n}\n",
+      "answers": ["drive"]
+    },
+    {
+      "id": "u5c21",
+      "type": "code",
+      "question": "추상 클래스 Animal을 상속받은 자식 클래스에서, 추상 메서드를 재정의할 때 올바른 접근 제한자를 채워 넣으시오.",
+      "codeSnippet": "public abstract class Animal {\n    public abstract void makeSound();\n}\n\npublic class Cat extends Animal {\n    @Override\n    public __ void makeSound() {\n        System.out.println(\"Meow\");\n    }\n}\n",
+      "answers": ["public"]
+    },
+    {
+      "id": "u5c22",
+      "type": "code",
+      "question": "인터페이스를 선언할 때, 인터페이스임을 나타내는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public __ Drawable {\n    void draw();\n}\n",
+      "answers": ["interface"]
+    },
+    {
+      "id": "u5c23",
+      "type": "code",
+      "question": "인터페이스 상속 시, 하위 인터페이스가 상위 인터페이스의 기능을 포함하도록 선언할 때 사용하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public interface First {\n    void firstMethod();\n}\n\npublic interface Second {\n    void secondMethod();\n}\n\npublic interface Combined __ First, Second {\n    // Combined 인터페이스는 First와 Second의 기능을 모두 포함함\n}\n",
+      "answers": ["extends"]
+    },
+    {
+      "id": "u5c24",
+      "type": "code",
+      "question": "추상 클래스의 자식 클래스에서, 부모 클래스의 생성자를 호출하기 위해 사용해야 하는 키워드를 채워 넣으시오.",
+      "codeSnippet": "public abstract class AbstractEntity {\n    protected int id;\n    public AbstractEntity(int id) {\n        this.id = id;\n    }\n}\n\npublic class UserEntity extends AbstractEntity {\n    public UserEntity(int id) {\n        __;\n    }\n}\n",
+      "answers": ["super(id)"]
+    },
+    {
+      "id": "u5c25",
+      "type": "code",
+      "question": "인터페이스 내에 메서드를 정의할 때, 모든 메서드가 암묵적으로 갖는 접근제한자를 명시적으로 작성하려면 어떤 키워드를 사용해야 하는지 채워 넣으시오.",
+      "codeSnippet": "public interface Sample {\n    ____ void execute();\n}\n",
+      "answers": ["public", "abstract"]
+    },
     {
       "id": "u5s1",
       "type": "subjective",
