@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Java 시험 예상문제</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Java 시험 예상문제</h1>
+      <!-- 단원 선택 -->
+      <div id="unit-selection">
+        <label for="unit-select">단원 선택: </label>
+        <select id="unit-select">
+          <option value="">--단원 선택--</option>
+          <option value="unit1">변수, 형변환, 배열</option>
+          <option value="unit2">객체지향 프로그래밍, 생성자, 메서드</option>
+          <option value="unit3">상속, 메서드 재정의, 제한자</option>
+          <option value="unit4">접근제한자, 다형성, 객체의 형변환</option>
+          <option value="unit5">추상 클래스, 인터페이스</option>
+          <option value="unit6">제네릭 , Enum, Annotation</option>
+        </select>
+      </div>
+      <!-- 문제들이 표시될 영역 -->
+      <div id="questions-container"></div>
+      <button id="submit-btn" style="display: none">제출</button>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

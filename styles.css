@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f8f8f8;
+}
+#container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+}
+.question {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.question p.question-text {
+  font-weight: bold;
+}
+.question ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.question li {
+  margin: 5px 0;
+}
+.feedback {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+.correct-answer {
+  background: #eef;
+  border: 1px dashed #66f;
+  padding: 5px;
+  margin-top: 5px;
+}
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+code {
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+input.code-blank {
+  width: 50px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  margin: 0 3px;
+  text-align: center;
+}
+#submit-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* 단원 선택 영역 */
+#unit-selection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#unit-selection select {
+  font-size: 16px;
+  padding: 5px;
+}
