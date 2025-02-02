@@ -1,7 +1,8 @@
+/* 기본 레이아웃 */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background: #f8f8f8;
+  background: #f0f2f5;
 }
 #container {
   max-width: 900px;
@@ -9,11 +10,67 @@ body {
   padding: 20px;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
+
+/* 단원 선택 영역 */
+#unit-selection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#unit-selection select {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* 문제 생성 옵션 영역 */
+#generation-menu {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+#generation-menu h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.option-group {
+  margin-bottom: 10px;
+}
+#question-count-selection p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+#question-count-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#question-count-options input[type="radio"] {
+  margin-right: 5px;
+}
+#generate-btn {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#generate-btn:hover {
+  background: #45a049;
+}
+
+/* 문제 영역 */
 .question {
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
@@ -57,30 +114,45 @@ code {
   font-size: 14px;
 }
 input.code-blank {
-  width: 50px;
+  width: 75px; /* 1.5배 증가 (50px -> 75px) */
   font-family: Consolas, monospace;
   font-size: 14px;
   margin: 0 3px;
   text-align: center;
 }
+
+textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+/* 주관식 텍스트 영역 크기 확대 */
+textarea[id^="input-"][rows] {
+  min-height: 120px;
+}
+
+/* 제출 버튼 및 결과 영역 */
 #submit-btn {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border: none;
+  background: #2196f3;
+  color: #fff;
+  border-radius: 5px;
+}
+#submit-btn:hover {
+  background: #1976d2;
 }
 #result {
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
-}
-/* 단원 선택 영역 */
-#unit-selection {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#unit-selection select {
-  font-size: 16px;
-  padding: 5px;
 }
