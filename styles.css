@@ -156,3 +156,48 @@ textarea[id^="input-"][rows] {
   font-size: 18px;
   margin-top: 20px;
 }
+
+/* 기존 CSS는 그대로 두고, 아래 내용을 추가 */
+
+/* 전역 오류 신고 플로팅 버튼 (오른쪽 하단 고정) */
+#global-report {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #e74c3c;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+#global-report a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+#global-report a:hover {
+  text-decoration: underline;
+}
+
+/* 각 문제 하단의 오류 신고 링크 (작은 아이콘 또는 텍스트 링크) */
+.report-container {
+  text-align: right;
+  margin-top: 5px;
+}
+.report-issue {
+  font-size: 12px;
+  color: #e74c3c;
+  text-decoration: none;
+}
+.report-issue:hover {
+  text-decoration: underline;
+}
+
+/* 기존 코드 빈칸(input.code-blank)의 너비 1.5배 (이미 적용된 경우) */
+input.code-blank {
+  width: 75px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  margin: 0 3px;
+  text-align: center;
+}

@@ -230,3 +230,53 @@ submitBtn.addEventListener("click", function () {
   resultEl.innerHTML = `자동 채점 점수: ${score} / ${totalAuto}`;
   resultEl.scrollIntoView({ behavior: "smooth" });
 });
+
+// --- 문제 렌더링 함수 ---
+function renderQuestions(questions) {
+  const container = document.getElementById("questions-container");
+  container.innerHTML = "";
+  questions.forEach((q, index) => {
+    let qHTML = `<div class="question" id="question-${q.id}">`;
+    qHTML += `<p class="question-text">${index + 1}. ${q.question.replace(/\n/g, "<br>")}</p>`;
+    
+    if (q.type === "mcq") {
+      qHTML += `<ul>`;
+      for (let option in q.options) {
+        qHTML += `<li>
+                      <label>
+                        <input type="radio" name="q_${q.id}" value="${option}"> ${option}) ${q.options[option]}
+                      </label>
+                    </li>`;
+      }
+      qHTML += `</ul>`;
+      qHTML += `<div class="feedback"></div>`;
+    } else if (q.type === "code") {
+      if (q.hasOwnProperty("codeSnippet") && q.hasOwnProperty("answers")) {
+        let parts = q.codeSnippet.split("__");
+        qHTML += `<pre><code>`;
+        for (let i = 0; i < parts.length - 1; i++) {
+          qHTML += parts[i];
+          qHTML += `<input type="text" class="code-blank" data-index="${i}" id="input-${q.id}-${i}">`;
+        }
+        qHTML += parts[parts.length - 1];
+        qHTML += `</code></pre>`;
+        qHTML += `<div class="feedback"></div>`;
+      } else {
+        qHTML += `<textarea id="input-${q.id}" rows="3" placeholder="여기에 코드를 입력하세요."></textarea>`;
+        qHTML += `<div class="feedback"></div>`;
+      }
+    } else if (q.type === "subjective") {
+      qHTML += `<textarea id="input-${q.id}" rows="6" placeholder="답안을 작성하세요."></textarea>`;
+      qHTML += `<div class="feedback"></div>`;
+      qHTML += `<div class="correct-answer" id="answer-${q.id}" style="display:none;">정답: ${q.correctAnswer}</div>`;
+    }
+    
+    // 각 문제 하단에 오류 신고 링크 추가 (문제 ID를 URL에 포함)
+    const issueURL = "https://github.com/daabaat/java_site/issues/new?title=" +
+                     encodeURIComponent("문제 오류 신고: " + q.id);
+    qHTML += `<div class="report-container"><a href="${issueURL}" target="_blank" class="report-issue">문제 오류 신고</a></div>`;
+    
+    qHTML += `</div>`;
+    container.innerHTML += qHTML;
+  });
+}
