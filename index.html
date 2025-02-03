@@ -19,42 +19,59 @@
           <option value="unit4">접근제한자, 다형성, 객체의 형변환</option>
           <option value="unit5">추상 클래스, 인터페이스</option>
           <option value="unit6">제네릭, Enum, Annotation</option>
+          <option value="unit7">Collection Framework, 자료구조</option>
+          <option value="unit8">람다 표현식, Stream API</option>
         </select>
         <div id="global-report">
-          <a href="https://github.com/daabaat/java_site/issues" target="_blank">문제 오류 신고</a>
+          <a href="https://github.com/daabaat/java_site/issues" target="_blank"
+            >문제 오류 신고</a
+          >
         </div>
       </div>
-      
+
       <!-- 문제 생성 옵션 메뉴 -->
-      <div id="generation-menu" class="card" style="display:none;">
+      <div id="generation-menu" class="card" style="display: none">
         <h2>문제 생성 옵션 선택</h2>
         <div class="option-group">
-          <input type="radio" name="genMode" value="random" id="genModeRandom">
+          <input
+            type="radio"
+            name="genMode"
+            value="random"
+            id="genModeRandom"
+          />
           <label for="genModeRandom">무작위 20문제 생성하기</label>
         </div>
         <div class="option-group">
-          <input type="radio" name="genMode" value="subjective" id="genModeSubjective">
+          <input
+            type="radio"
+            name="genMode"
+            value="subjective"
+            id="genModeSubjective"
+          />
           <label for="genModeSubjective">주관식만 풀어보기</label>
         </div>
         <div class="option-group">
-          <input type="radio" name="genMode" value="code" id="genModeCode">
+          <input type="radio" name="genMode" value="code" id="genModeCode" />
           <label for="genModeCode">빈칸 채우기만 풀어보기</label>
         </div>
         <div class="option-group">
-          <input type="radio" name="genMode" value="mcq" id="genModeMCQ">
+          <input type="radio" name="genMode" value="mcq" id="genModeMCQ" />
           <label for="genModeMCQ">객관식만 풀어보기</label>
         </div>
         <!-- 문제 수 선택 영역 (라디오버튼) -->
-        <div id="question-count-selection" style="display:none; margin-top:15px;">
+        <div
+          id="question-count-selection"
+          style="display: none; margin-top: 15px"
+        >
           <p>몇 문제를 생성할까요?</p>
           <div id="question-count-options"></div>
         </div>
-        <button id="generate-btn" style="display:none;">문제 생성하기</button>
+        <button id="generate-btn" style="display: none">문제 생성하기</button>
       </div>
-      
+
       <!-- 문제들이 표시될 영역 -->
       <div id="questions-container"></div>
-      <button id="submit-btn" style="display: none;">제출</button>
+      <button id="submit-btn" style="display: none">제출</button>
       <div id="result"></div>
     </div>
     <script src="script.js"></script>

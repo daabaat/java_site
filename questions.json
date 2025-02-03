@@ -4635,5 +4635,1865 @@
       "question": "자바에서 추상 클래스와 인터페이스를 함께 사용할 때의 장점과 단점에 대해 논하시오.",
       "correctAnswer": "추상 클래스와 인터페이스를 함께 사용하면, 공통 기능과 계약을 분리하여 코드 재사용성과 유연성을 높일 수 있지만, 설계가 복잡해지고 클래스 간 결합도가 증가할 위험이 있다."
     }
+  ],
+  "unit7": [
+    {
+      "id": "u7m1",
+      "type": "mcq",
+      "question": "자료구조란 무엇인가?",
+      "options": {
+        "A": "단순히 데이터를 저장하는 방법",
+        "B": "데이터를 조직, 관리, 저장하는 방식과 데이터 간의 관계 및 연산을 포함하는 개념",
+        "C": "데이터베이스의 한 종류",
+        "D": "프로그램의 실행 속도를 결정하는 알고리즘"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m2",
+      "type": "mcq",
+      "question": "배열의 주요 특징은 무엇인가?",
+      "options": {
+        "A": "모든 데이터가 동일한 타입이어야 한다",
+        "B": "동적 크기를 가진다",
+        "C": "데이터 삽입과 삭제가 용이하다",
+        "D": "내부적으로 연결 리스트로 구현된다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m3",
+      "type": "mcq",
+      "question": "List 인터페이스의 특징으로 옳은 것은?",
+      "options": {
+        "A": "입력 순서를 유지하며 중복을 허용한다",
+        "B": "중복을 허용하지 않는다",
+        "C": "순서가 없고 중복을 허용하지 않는다",
+        "D": "정렬된 상태를 항상 유지한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m4",
+      "type": "mcq",
+      "question": "Set 인터페이스의 주요 특징은?",
+      "options": {
+        "A": "입력 순서를 유지한다",
+        "B": "중복된 데이터를 허용하지 않는다",
+        "C": "인덱스 기반 접근을 제공한다",
+        "D": "모든 요소가 정렬되어 저장된다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m5",
+      "type": "mcq",
+      "question": "Map 인터페이스에서 Key의 특징은 무엇인가?",
+      "options": {
+        "A": "중복을 허용한다",
+        "B": "순서를 유지한다",
+        "C": "유일해야 하며 중복을 허용하지 않는다",
+        "D": "정렬되어 저장된다"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u7m6",
+      "type": "mcq",
+      "question": "ArrayList의 단점으로 옳은 것은?",
+      "options": {
+        "A": "고정된 크기를 가진다",
+        "B": "요소 삽입/삭제 시 요소 이동에 따른 비용이 발생한다",
+        "C": "빠른 랜덤 접근이 불가능하다",
+        "D": "메모리 사용이 과도하다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m7",
+      "type": "mcq",
+      "question": "LinkedList의 장점으로 옳은 것은?",
+      "options": {
+        "A": "빠른 인덱스 접근",
+        "B": "동적 요소 삽입 및 삭제가 빠르다",
+        "C": "배열보다 메모리 사용이 적다",
+        "D": "자동 정렬 기능을 제공한다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m8",
+      "type": "mcq",
+      "question": "List에서 요소 삭제 시 인덱스 감소가 필요한 이유는 무엇인가?",
+      "options": {
+        "A": "요소가 삭제되면 인덱스가 자동으로 재배치되기 때문",
+        "B": "메모리 누수가 발생하기 때문",
+        "C": "삭제된 요소의 자리가 null로 채워지기 때문",
+        "D": "요소가 삭제될 때마다 리스트가 재정렬되기 때문"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m9",
+      "type": "mcq",
+      "question": "LinkedList의 내부 구조는 무엇으로 구성되는가?",
+      "options": {
+        "A": "배열",
+        "B": "노드와 포인터(링크)",
+        "C": "해시 테이블",
+        "D": "트리 구조"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m10",
+      "type": "mcq",
+      "question": "ArrayList와 LinkedList 중 랜덤 접근이 빠른 것은?",
+      "options": {
+        "A": "ArrayList",
+        "B": "LinkedList",
+        "C": "둘 다 같다",
+        "D": "둘 다 느리다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m11",
+      "type": "mcq",
+      "question": "Set 인터페이스의 주된 목적은 무엇인가?",
+      "options": {
+        "A": "데이터의 순서를 유지하기 위해",
+        "B": "중복된 데이터를 제거하기 위해",
+        "C": "빠른 인덱스 접근을 제공하기 위해",
+        "D": "데이터를 정렬하기 위해"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m12",
+      "type": "mcq",
+      "question": "List 인터페이스의 구현체 중 배열 기반으로 동작하는 것은?",
+      "options": {
+        "A": "LinkedList",
+        "B": "ArrayList",
+        "C": "Vector",
+        "D": "Stack"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m13",
+      "type": "mcq",
+      "question": "List 인터페이스의 구현체 중 링크드 리스트 기반은?",
+      "options": {
+        "A": "ArrayList",
+        "B": "LinkedList",
+        "C": "HashSet",
+        "D": "TreeSet"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m14",
+      "type": "mcq",
+      "question": "CRUD는 무엇의 약자인가?",
+      "options": {
+        "A": "Create, Read, Update, Delete",
+        "B": "Copy, Remove, Update, Delete",
+        "C": "Create, Remove, Undo, Delete",
+        "D": "Compile, Run, Update, Delete"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m15",
+      "type": "mcq",
+      "question": "자료구조 선택 시 고려해야 할 주요 요소는 무엇인가?",
+      "options": {
+        "A": "삽입/삭제 속도",
+        "B": "랜덤 접근 속도",
+        "C": "메모리 사용량",
+        "D": "모두 해당된다"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u7m16",
+      "type": "mcq",
+      "question": "Collections.sort()를 사용하기 위해 요소들은 어떤 인터페이스를 구현해야 하는가?",
+      "options": {
+        "A": "Comparator",
+        "B": "Comparable",
+        "C": "Iterable",
+        "D": "Serializable"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m17",
+      "type": "mcq",
+      "question": "사용자 정의 정렬 기준을 제공하기 위한 인터페이스는?",
+      "options": {
+        "A": "Comparable",
+        "B": "Comparator",
+        "C": "Runnable",
+        "D": "Iterable"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m18",
+      "type": "mcq",
+      "question": "리스트에서 요소 삭제 시 for문을 역순으로 실행하는 이유는?",
+      "options": {
+        "A": "요소 삭제 시 인덱스가 재배치되기 때문",
+        "B": "메모리 누수를 방지하기 위해",
+        "C": "정렬을 유지하기 위해",
+        "D": "삭제 후 오류가 발생하지 않기 위해"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m19",
+      "type": "mcq",
+      "question": "Iterator의 주요 기능은 무엇인가?",
+      "options": {
+        "A": "요소를 순회하며 처리한다",
+        "B": "요소를 정렬한다",
+        "C": "요소를 추가한다",
+        "D": "요소를 삭제하지 못한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m20",
+      "type": "mcq",
+      "question": "ArrayList에서 요소 추가 시, 내부 배열이 부족할 경우 발생하는 작업은?",
+      "options": {
+        "A": "예외 발생",
+        "B": "새로운 배열로 복사하여 확장",
+        "C": "자동 삭제",
+        "D": "무시되고 추가되지 않음"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m21",
+      "type": "mcq",
+      "question": "LinkedList의 단점은 무엇인가?",
+      "options": {
+        "A": "랜덤 접근 속도가 느리다",
+        "B": "삽입/삭제가 느리다",
+        "C": "메모리 사용이 적다",
+        "D": "내부적으로 배열을 사용한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m22",
+      "type": "mcq",
+      "question": "TreeSet의 주요 특징은 무엇인가?",
+      "options": {
+        "A": "중복을 허용하며 순서를 유지한다",
+        "B": "중복을 제거하고 정렬된 상태로 저장한다",
+        "C": "빠른 인덱스 접근을 제공한다",
+        "D": "해시 테이블 기반으로 동작한다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m23",
+      "type": "mcq",
+      "question": "HashMap에서 key 충돌을 해결하는 방법은?",
+      "options": {
+        "A": "체이닝(Chaining)",
+        "B": "오픈 어드레싱(Open Addressing)",
+        "C": "둘 다 사용된다",
+        "D": "충돌을 허용하지 않는다"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u7m24",
+      "type": "mcq",
+      "question": "Map 인터페이스에서 key와 value의 한 쌍을 저장하는 단위는?",
+      "options": {
+        "A": "Pair",
+        "B": "Entry",
+        "C": "Tuple",
+        "D": "Node"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m25",
+      "type": "mcq",
+      "question": "HashSet은 데이터를 어떤 방식으로 저장하는가?",
+      "options": {
+        "A": "배열",
+        "B": "링크드 리스트",
+        "C": "해시 테이블",
+        "D": "트리"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u7m26",
+      "type": "mcq",
+      "question": "Iterator의 remove() 메서드의 주 용도는 무엇인가?",
+      "options": {
+        "A": "요소 추가",
+        "B": "요소 삭제",
+        "C": "요소 변경",
+        "D": "순회 중단"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m27",
+      "type": "mcq",
+      "question": "Collections.reverse() 메서드가 수행하는 작업은?",
+      "options": {
+        "A": "리스트의 요소를 정렬한다",
+        "B": "리스트의 요소 순서를 반전시킨다",
+        "C": "리스트의 요소를 복사한다",
+        "D": "리스트의 요소를 삭제한다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m28",
+      "type": "mcq",
+      "question": "Comparable 인터페이스를 구현할 때 필수로 재정의해야 하는 메서드는?",
+      "options": {
+        "A": "compare()",
+        "B": "compareTo()",
+        "C": "equals()",
+        "D": "hashCode()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m29",
+      "type": "mcq",
+      "question": "Comparator 인터페이스의 주요 메서드는 무엇인가?",
+      "options": {
+        "A": "compare()",
+        "B": "compareTo()",
+        "C": "equals()",
+        "D": "toString()"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m30",
+      "type": "mcq",
+      "question": "LinkedHashSet의 주요 장점은 무엇인가?",
+      "options": {
+        "A": "중복 제거와 함께 삽입 순서를 유지한다",
+        "B": "자동 정렬된다",
+        "C": "빠른 인덱스 접근을 제공한다",
+        "D": "메모리 사용이 최소화된다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m31",
+      "type": "mcq",
+      "question": "TreeMap의 주요 특징은 무엇인가?",
+      "options": {
+        "A": "키와 값이 해시 테이블에 저장된다",
+        "B": "키를 기준으로 정렬되어 저장된다",
+        "C": "삽입 순서를 유지한다",
+        "D": "동기화를 지원한다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m32",
+      "type": "mcq",
+      "question": "Iterator와 for-each 루프의 차이점은 무엇인가?",
+      "options": {
+        "A": "Iterator는 요소 삭제가 가능하다",
+        "B": "for-each 루프는 요소 삭제가 가능하다",
+        "C": "둘 다 요소 삭제가 가능하다",
+        "D": "Iterator는 순회 중 요소를 추가할 수 있다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m33",
+      "type": "mcq",
+      "question": "Collections.binarySearch() 메서드를 사용하려면 리스트의 요소들이 무엇을 구현해야 하는가?",
+      "options": {
+        "A": "Comparable",
+        "B": "Comparator",
+        "C": "Iterable",
+        "D": "Serializable"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m34",
+      "type": "mcq",
+      "question": "자료구조에서 '중복 제거' 기능은 주로 어느 인터페이스에서 제공되는가?",
+      "options": {
+        "A": "List",
+        "B": "Set",
+        "C": "Map",
+        "D": "Queue"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m35",
+      "type": "mcq",
+      "question": "ArrayList와 LinkedList의 선택 기준 중 올바른 것은?",
+      "options": {
+        "A": "데이터 조회가 많다면 ArrayList, 삽입/삭제가 많다면 LinkedList",
+        "B": "데이터 조회가 많다면 LinkedList, 삽입/삭제가 많다면 ArrayList",
+        "C": "둘 다 동일하다",
+        "D": "상황에 관계없이 ArrayList가 항상 빠르다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m36",
+      "type": "mcq",
+      "question": "LinkedList에서 요소를 삭제할 때 주의해야 하는 점은 무엇인가?",
+      "options": {
+        "A": "인덱스가 감소해야 한다",
+        "B": "인덱스가 증가해야 한다",
+        "C": "요소가 자동으로 null로 채워진다",
+        "D": "요소가 정렬된다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m37",
+      "type": "mcq",
+      "question": "HashMap과 Hashtable의 주요 차이점은 무엇인가?",
+      "options": {
+        "A": "HashMap은 동기화를 지원하지 않으며 null 키와 null 값을 허용한다",
+        "B": "Hashtable은 동기화를 지원하며 null 키와 null 값을 허용한다",
+        "C": "HashMap은 동기화를 지원하며 null 키를 허용하지 않는다",
+        "D": "둘은 완전히 동일하다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7m38",
+      "type": "mcq",
+      "question": "LinkedHashMap의 특징은 무엇인가?",
+      "options": {
+        "A": "요소가 해시 테이블에 무작위로 저장된다",
+        "B": "삽입 순서를 유지한다",
+        "C": "키가 정렬되어 저장된다",
+        "D": "동기화가 기본적으로 지원된다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m39",
+      "type": "mcq",
+      "question": "TreeSet은 어떤 기준으로 요소를 정렬하는가?",
+      "options": {
+        "A": "삽입 순서",
+        "B": "요소의 해시 값",
+        "C": "자연 순서 또는 Comparator에 의해 결정",
+        "D": "랜덤 순서"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u7m40",
+      "type": "mcq",
+      "question": "List 인터페이스에서 요소를 대체하는 메서드는 무엇인가?",
+      "options": {
+        "A": "add()",
+        "B": "set()",
+        "C": "replace()",
+        "D": "update()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m41",
+      "type": "mcq",
+      "question": "자료구조에서 '정렬'이란 무엇을 의미하는가?",
+      "options": {
+        "A": "요소를 삽입 순서대로 유지하는 것",
+        "B": "요소를 특정 기준에 따라 순서대로 배치하는 것",
+        "C": "중복 요소를 제거하는 것",
+        "D": "요소를 삭제하는 것"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m42",
+      "type": "mcq",
+      "question": "Iterator를 사용하여 컬렉션의 요소를 순회할 때 발생할 수 있는 예외는?",
+      "options": {
+        "A": "NullPointerException",
+        "B": "IndexOutOfBoundsException",
+        "C": "ConcurrentModificationException",
+        "D": "ClassCastException"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u7m43",
+      "type": "mcq",
+      "question": "Collections.sort() 메서드를 사용할 때, 리스트의 요소들이 반드시 구현해야 하는 인터페이스는?",
+      "options": {
+        "A": "Comparator",
+        "B": "Comparable",
+        "C": "Iterable",
+        "D": "Serializable"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m44",
+      "type": "mcq",
+      "question": "Map 인터페이스에서 값을 저장할 때, key와 value를 함께 저장하는 단위는 무엇으로 불리는가?",
+      "options": {
+        "A": "Pair",
+        "B": "Entry",
+        "C": "Tuple",
+        "D": "Node"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m45",
+      "type": "mcq",
+      "question": "LinkedList와 ArrayList의 선택 시 가장 중요한 고려 사항은 무엇인가?",
+      "options": {
+        "A": "요소의 추가/삭제 빈도",
+        "B": "요소의 랜덤 접근 빈도",
+        "C": "메모리 사용량",
+        "D": "A와 B 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u7m46",
+      "type": "mcq",
+      "question": "TreeMap은 어떤 방식으로 데이터를 정렬하는가?",
+      "options": {
+        "A": "키의 해시 값",
+        "B": "키의 자연 순서 또는 제공된 Comparator에 따라",
+        "C": "값의 크기",
+        "D": "입력 순서"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u7m47",
+      "type": "mcq",
+      "question": "HashSet의 내부 구조는 주로 어떤 데이터 구조를 사용하는가?",
+      "options": {
+        "A": "배열",
+        "B": "연결 리스트",
+        "C": "해시 테이블",
+        "D": "트리"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u7m48",
+      "type": "mcq",
+      "question": "자료구조 선택 시 가장 중요한 성능 지표 중 하나는 무엇인가?",
+      "options": {
+        "A": "삽입/삭제 속도",
+        "B": "검색 속도",
+        "C": "메모리 사용량",
+        "D": "모두 해당된다"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u7m49",
+      "type": "mcq",
+      "question": "Collection Framework의 주요 인터페이스에 포함되지 않는 것은?",
+      "options": {
+        "A": "List",
+        "B": "Set",
+        "C": "Map",
+        "D": "Stack"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u7m50",
+      "type": "mcq",
+      "question": "Collections Framework가 객체지향 프로그래밍에서 중요한 이유는 무엇인가?",
+      "options": {
+        "A": "표준화된 자료구조와 알고리즘을 제공하기 때문",
+        "B": "모든 자료구조가 동일한 성능을 보장하기 때문",
+        "C": "메모리 관리를 자동으로 수행하기 때문",
+        "D": "데이터베이스와 직접 연결되기 때문"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u7c1",
+      "type": "code",
+      "question": "ArrayList를 제너릭을 사용하여 선언하고, 문자열만 저장하도록 하는 코드를 완성하시오.",
+      "codeSnippet": "List<__> list = new ArrayList<>();",
+      "answers": ["String"]
+    },
+    {
+      "id": "u7c2",
+      "type": "code",
+      "question": "LinkedList를 선언하여 정수 값을 저장하고, 10을 추가하는 코드를 완성하시오.",
+      "codeSnippet": "List<Integer> list = new LinkedList<>();\nlist.add(__);",
+      "answers": ["10"]
+    },
+    {
+      "id": "u7c3",
+      "type": "code",
+      "question": "HashSet을 사용하여 중복 없는 문자열 집합을 생성하는 코드를 완성하시오.",
+      "codeSnippet": "Set<__> set = new HashSet<>();",
+      "answers": ["String"]
+    },
+    {
+      "id": "u7c4",
+      "type": "code",
+      "question": "HashMap을 사용하여 키가 문자열, 값이 정수인 맵을 생성하는 코드를 완성하시오.",
+      "codeSnippet": "Map<__, __> map = new HashMap<>();",
+      "answers": ["String", "Integer"]
+    },
+    {
+      "id": "u7c5",
+      "type": "code",
+      "question": "List에서 짝수 값을 삭제하는 코드를 작성할 때, 올바른 for문 순서를를 위한 코드를 작성하시오.",
+      "codeSnippet": "for (int i = list.size() - 1; i >= 0; i--) {\n    if (list.get(i) % 2 == 0) {\n        list.remove(i);\n    }\n}",
+      "answers": [""]
+    },
+    {
+      "id": "u7c6",
+      "type": "code",
+      "question": "Collections.sort()를 사용하여 List를 오름차순으로 정렬하는 코드를 완성하시오.",
+      "codeSnippet": "Collections.sort(__);",
+      "answers": ["list"]
+    },
+    {
+      "id": "u7c7",
+      "type": "code",
+      "question": "Comparable 인터페이스를 구현한 클래스에서 compareTo() 메서드를 재정의하는 예제에서 빈칸을 채워 넣으시오.",
+      "codeSnippet": "public int compareTo(__ other) {\n    return this.value - other.value;\n}",
+      "answers": ["MyClass"]
+    },
+    {
+      "id": "u7c8",
+      "type": "code",
+      "question": "Comparator 인터페이스를 사용하여 두 객체를 비교하는 익명 클래스를 작성하는 예제에서 빈칸을 채워 넣으시오.",
+      "codeSnippet": "Comparator<MyClass> comp = new Comparator<MyClass>() {\n    @Override\n    public int compare(MyClass o1, MyClass o2) {\n        return o1.value - o2.value;\n    }\n};",
+      "answers": [""]
+    },
+    {
+      "id": "u7c9",
+      "type": "code",
+      "question": "Iterator를 사용하여 List의 모든 요소를 출력하는 코드를 완성하시오.",
+      "codeSnippet": "Iterator<__> it = list.iterator();\nwhile (it.hasNext()) {\n    System.out.println(it.next());\n}",
+      "answers": ["Integer"]
+    },
+    {
+      "id": "u7c10",
+      "type": "code",
+      "question": "ArrayList에서 인덱스를 이용하여 요소를 가져오는 코드를 완성하시오.",
+      "codeSnippet": "E element = list.get(__);",
+      "answers": ["index"]
+    },
+    {
+      "id": "u7c11",
+      "type": "code",
+      "question": "LinkedList에서 요소를 추가하는 메서드의 이름을 채워 넣으시오.",
+      "codeSnippet": "list.__(element);",
+      "answers": ["add"]
+    },
+    {
+      "id": "u7c12",
+      "type": "code",
+      "question": "HashSet에 요소를 추가하는 코드를 완성하시오.",
+      "codeSnippet": "set.__(value);",
+      "answers": ["add"]
+    },
+    {
+      "id": "u7c13",
+      "type": "code",
+      "question": "TreeMap을 선언하여, 키가 String, 값이 Integer인 맵을 생성하는 코드를 완성하시오.",
+      "codeSnippet": "Map<__, __> map = new TreeMap<>();",
+      "answers": ["String", "Integer"]
+    },
+    {
+      "id": "u7c14",
+      "type": "code",
+      "question": "Iterator의 remove() 메서드를 사용하여 요소를 제거하는 코드를 완성하시오.",
+      "codeSnippet": "while(it.hasNext()) {\n    if (조건) {\n        it.__();\n    }\n}",
+      "answers": ["remove"]
+    },
+    {
+      "id": "u7c15",
+      "type": "code",
+      "question": "List에서 특정 인덱스에 요소를 삽입하는 메서드를 채워 넣으시오.",
+      "codeSnippet": "list.__(index, element);",
+      "answers": ["add"]
+    },
+    {
+      "id": "u7c16",
+      "type": "code",
+      "question": "LinkedList에서 첫 번째 요소를 삭제하는 메서드의 이름은 무엇인가?",
+      "codeSnippet": "list.__();",
+      "answers": ["removeFirst"]
+    },
+    {
+      "id": "u7c17",
+      "type": "code",
+      "question": "HashMap에서 특정 키에 대응하는 값을 가져오는 메서드를 채워 넣으시오.",
+      "codeSnippet": "map.__(key);",
+      "answers": ["get"]
+    },
+    {
+      "id": "u7c18",
+      "type": "code",
+      "question": "ArrayList의 내부 배열이 가득 찼을 때 수행되는 작업을 설명하는 주석을 작성하시오.",
+      "codeSnippet": "// 내부적으로 새로운 배열로 복사하여 확장한다.",
+      "answers": [""]
+    },
+    {
+      "id": "u7c19",
+      "type": "code",
+      "question": "Collections.reverse()를 사용하여 List의 순서를 반전하는 코드를 완성하시오.",
+      "codeSnippet": "Collections.reverse(__);",
+      "answers": ["list"]
+    },
+    {
+      "id": "u7c20",
+      "type": "code",
+      "question": "Comparable 인터페이스의 compareTo() 메서드를 사용하여 두 객체를 비교하는 코드를 완성하시오.",
+      "codeSnippet": "int result = obj1.compareTo(__);",
+      "answers": ["obj2"]
+    },
+    {
+      "id": "u7c21",
+      "type": "code",
+      "question": "TreeSet은 요소를 정렬하여 저장하는 컬렉션이다. TreeSet을 선언하는 코드를 완성하시오.",
+      "codeSnippet": "Set<__> set = new TreeSet<>();",
+      "answers": ["Integer"]
+    },
+    {
+      "id": "u7c22",
+      "type": "code",
+      "question": "LinkedHashSet은 삽입 순서를 유지하는 Set 구현체이다. 해당 Set을 선언하는 코드를 완성하시오.",
+      "codeSnippet": "Set<__> set = new LinkedHashSet<>();",
+      "answers": ["String"]
+    },
+    {
+      "id": "u7c23",
+      "type": "code",
+      "question": "List의 요소들을 배열로 변환하는 메서드를 채워 넣으시오.",
+      "codeSnippet": "Object[] arr = list.__();",
+      "answers": ["toArray"]
+    },
+    {
+      "id": "u7c24",
+      "type": "code",
+      "question": "Collections.binarySearch() 메서드를 사용하여 List에서 요소를 검색하는 코드를 완성하시오.",
+      "codeSnippet": "int index = Collections.binarySearch(list, __);",
+      "answers": ["target"]
+    },
+    {
+      "id": "u7c25",
+      "type": "code",
+      "question": "List에서 요소를 대체하는 메서드를 채워 넣으시오.",
+      "codeSnippet": "list.__(index, element);",
+      "answers": ["set"]
+    },
+    {
+      "id": "u7s1",
+      "type": "subjective",
+      "question": "자료 구조의 정의와 그 중요성에 대해 서술하시오.",
+      "correctAnswer": "자료 구조는 데이터를 효율적으로 저장, 관리, 접근할 수 있도록 하는 방법으로, 프로그램의 성능과 유지보수성을 향상시킨다."
+    },
+    {
+      "id": "u7s2",
+      "type": "subjective",
+      "question": "배열과 ArrayList의 장단점에 대해 서술하시오.",
+      "correctAnswer": "배열은 고정된 크기와 빠른 인덱스 접근이 장점이지만, 크기 조절이 어려워 요소 추가/삭제에 불편함이 있다. 반면 ArrayList는 동적 크기를 지원하여 요소 추가/삭제가 용이하지만, 삽입/삭제 시 요소 이동으로 인한 성능 저하가 발생할 수 있다."
+    },
+    {
+      "id": "u7s3",
+      "type": "subjective",
+      "question": "LinkedList의 내부 구조와 그 장단점에 대해 서술하시오.",
+      "correctAnswer": "LinkedList는 각 요소가 노드 형태로 연결되어 있어 삽입과 삭제가 빠르지만, 인덱스 기반의 접근 속도가 느리다는 단점이 있다."
+    },
+    {
+      "id": "u7s4",
+      "type": "subjective",
+      "question": "Set 인터페이스의 주요 특징과 활용 예에 대해 서술하시오.",
+      "correctAnswer": "Set은 중복된 데이터를 허용하지 않으며, 중복 제거 및 집합 연산에 유용하다. HashSet, LinkedHashSet, TreeSet 등이 있으며 각각의 특성에 맞게 사용된다."
+    },
+    {
+      "id": "u7s5",
+      "type": "subjective",
+      "question": "Map 인터페이스의 역할과 Key-Value 구조의 장점에 대해 설명하시오.",
+      "correctAnswer": "Map은 데이터를 Key와 Value 쌍으로 저장하여, Key를 통해 빠르게 값을 검색할 수 있고, 각 Key가 유일하여 데이터 관리에 용이하다."
+    },
+    {
+      "id": "u7s6",
+      "type": "subjective",
+      "question": "자료구조를 선택할 때 고려해야 할 성능 지표에 대해 서술하시오.",
+      "correctAnswer": "자료구조 선택 시 삽입, 삭제, 검색 속도와 메모리 사용량을 고려해야 하며, 각 자료구조의 특성에 맞게 선택해야 한다."
+    },
+    {
+      "id": "u7s7",
+      "type": "subjective",
+      "question": "Iterator와 for-each 루프의 차이점과 각각의 장단점에 대해 설명하시오.",
+      "correctAnswer": "Iterator는 요소 삭제와 같은 추가 기능을 제공하며 명시적으로 순회할 수 있지만, for-each 루프는 코드가 간결하나 요소 삭제가 불가능하다."
+    },
+    {
+      "id": "u7s8",
+      "type": "subjective",
+      "question": "Comparable과 Comparator 인터페이스의 차이점에 대해 설명하시오.",
+      "correctAnswer": "Comparable은 객체 내부에 기본 정렬 기준을 제공하며 compareTo() 메서드를 구현하는 반면, Comparator는 외부에서 정렬 기준을 정의하여 compare() 메서드를 제공한다."
+    },
+    {
+      "id": "u7s9",
+      "type": "subjective",
+      "question": "Collections.sort() 메서드의 작동 원리에 대해 서술하시오.",
+      "correctAnswer": "Collections.sort()는 리스트의 요소들이 Comparable을 구현하거나 Comparator를 사용하여, 내부적으로 정렬 알고리즘을 적용해 요소들의 순서를 재배치한다."
+    },
+    {
+      "id": "u7s10",
+      "type": "subjective",
+      "question": "ArrayList와 LinkedList의 성능 차이에 대해 논하시오.",
+      "correctAnswer": "ArrayList는 인덱스 기반 접근이 빠르지만 삽입/삭제 시 배열 복사 비용이 발생하고, LinkedList는 삽입/삭제가 빠르지만 인덱스 접근이 느리다."
+    },
+    {
+      "id": "u7s11",
+      "type": "subjective",
+      "question": "HashSet과 TreeSet의 차이점 및 각각의 장단점에 대해 서술하시오.",
+      "correctAnswer": "HashSet은 빠른 검색을 제공하지만 정렬되지 않고, TreeSet은 정렬된 상태를 유지하므로 탐색은 느릴 수 있다."
+    },
+    {
+      "id": "u7s12",
+      "type": "subjective",
+      "question": "LinkedHashSet이 HashSet과 구별되는 점과 사용 이유에 대해 서술하시오.",
+      "correctAnswer": "LinkedHashSet은 요소의 삽입 순서를 유지하기 때문에, 순서가 중요한 경우에 사용된다."
+    },
+    {
+      "id": "u7s13",
+      "type": "subjective",
+      "question": "HashMap과 Hashtable의 차이점에 대해 설명하시오.",
+      "correctAnswer": "HashMap은 동기화를 지원하지 않아 성능이 좋고 null을 허용하는 반면, Hashtable은 동기화를 기본으로 하여 스레드 안전하지만 성능이 떨어지고 null을 허용하지 않는다."
+    },
+    {
+      "id": "u7s14",
+      "type": "subjective",
+      "question": "Iterator의 remove() 메서드를 사용할 때 주의해야 할 점에 대해 설명하시오.",
+      "correctAnswer": "Iterator의 remove() 메서드는 순회 중 안전하게 요소를 제거하기 위해 사용해야 하며, for-each 루프와 같이 직접 컬렉션에서 제거하면 ConcurrentModificationException이 발생할 수 있다."
+    },
+    {
+      "id": "u7s15",
+      "type": "subjective",
+      "question": "Collections.reverse() 메서드가 리스트의 순서를 어떻게 변경하는지 서술하시오.",
+      "correctAnswer": "Collections.reverse()는 리스트의 첫 번째 요소와 마지막 요소를 교환하고, 중간 요소들을 반전시켜 전체 순서를 역전시킨다."
+    },
+    {
+      "id": "u7s16",
+      "type": "subjective",
+      "question": "List의 add() 메서드와 set() 메서드의 차이점에 대해 설명하시오.",
+      "correctAnswer": "add()는 리스트에 새 요소를 추가하여 크기를 증가시키고, set()은 특정 인덱스의 요소를 대체하여 리스트의 크기는 변하지 않는다."
+    },
+    {
+      "id": "u7s17",
+      "type": "subjective",
+      "question": "Comparable 인터페이스의 역할과 compareTo() 메서드의 중요성에 대해 서술하시오.",
+      "correctAnswer": "Comparable 인터페이스는 객체 간의 자연 순서를 정의하며, compareTo() 메서드를 통해 객체를 비교할 수 있어 정렬 작업에 필수적이다."
+    },
+    {
+      "id": "u7s18",
+      "type": "subjective",
+      "question": "Map에서 키의 중복이 허용되지 않는 이유에 대해 서술하시오.",
+      "correctAnswer": "키의 중복이 허용되지 않음으로써, 각 키를 통해 유일하게 값을 검색할 수 있어 데이터의 일관성과 검색 효율성을 보장한다."
+    },
+    {
+      "id": "u7s19",
+      "type": "subjective",
+      "question": "컬렉션에서 삽입 순서와 정렬 순서의 차이에 대해 설명하시오.",
+      "correctAnswer": "삽입 순서는 데이터가 추가된 순서를 의미하며, 정렬 순서는 특정 기준(예: 오름차순, 내림차순)에 따라 재배치된 순서를 의미한다."
+    },
+    {
+      "id": "u7s20",
+      "type": "subjective",
+      "question": "Comparator 인터페이스를 사용하여 사용자 정의 정렬 기준을 구현하는 방법에 대해 서술하시오.",
+      "correctAnswer": "Comparator 인터페이스를 구현하거나 익명 클래스로 정의하여 compare() 메서드를 재정의하면, 원하는 기준에 따라 두 객체를 비교하여 정렬할 수 있다."
+    },
+    {
+      "id": "u7s21",
+      "type": "subjective",
+      "question": "Collection Framework가 객체지향 프로그래밍에서 중요한 이유에 대해 논하시오.",
+      "correctAnswer": "Collection Framework는 표준화된 자료구조와 알고리즘을 제공하여, 코드의 재사용성과 유지보수성을 높이고, 효율적인 데이터 처리를 가능하게 한다."
+    },
+    {
+      "id": "u7s22",
+      "type": "subjective",
+      "question": "ArrayList의 내부 동작 원리와 그에 따른 장단점에 대해 서술하시오.",
+      "correctAnswer": "ArrayList는 내부적으로 배열을 사용하여 데이터를 저장하므로 인덱스 접근이 빠르지만, 배열의 크기가 부족할 때 재할당 비용과 요소 이동 비용이 발생한다."
+    },
+    {
+      "id": "u7s23",
+      "type": "subjective",
+      "question": "LinkedList의 구조와 삽입/삭제의 효율성이 왜 높은지 설명하시오.",
+      "correctAnswer": "LinkedList는 각 요소가 노드로 연결되어 있어, 삽입/삭제 시 인접 노드의 포인터만 수정하면 되므로 빠른 작업이 가능하다."
+    },
+    {
+      "id": "u7s24",
+      "type": "subjective",
+      "question": "TreeMap과 HashMap의 주요 차이점에 대해 서술하시오.",
+      "correctAnswer": "TreeMap은 키를 정렬하여 저장하며, 정렬 기반 검색이 가능하지만 속도가 느릴 수 있고, HashMap은 해시 기반으로 빠른 검색을 지원하나 정렬되지 않는다."
+    },
+    {
+      "id": "u7s25",
+      "type": "subjective",
+      "question": "Collection Framework가 객체지향 프로그래밍에서 중요한 역할을 하는 이유에 대해 서술하시오.",
+      "correctAnswer": "Collection Framework는 다양한 자료구조와 알고리즘을 표준화하여 제공함으로써, 데이터의 효율적인 관리, 검색, 정렬 등을 가능하게 하여 소프트웨어 개발의 생산성과 유지보수성을 높인다."
+    }
+  ],
+  "unit8": [
+    {
+      "id": "u8m1",
+      "type": "mcq",
+      "question": "람다 표현식이란 무엇인가?",
+      "options": {
+        "A": "익명 내부 클래스를 대체하는 간결한 함수형 코드 블록",
+        "B": "데이터베이스 쿼리 언어",
+        "C": "일반 메서드 호출 방식",
+        "D": "객체지향 프로그래밍의 핵심 개념"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m2",
+      "type": "mcq",
+      "question": "람다 표현식의 주요 장점은 무엇인가?",
+      "options": {
+        "A": "코드의 간결성 향상",
+        "B": "익명 내부 클래스보다 가독성이 좋음",
+        "C": "함수형 프로그래밍 패러다임을 지원",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m3",
+      "type": "mcq",
+      "question": "람다 표현식에서 '->' 기호의 역할은 무엇인가?",
+      "options": {
+        "A": "매개변수와 실행문을 구분한다",
+        "B": "값을 할당한다",
+        "C": "메서드를 호출한다",
+        "D": "비교 연산을 수행한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m4",
+      "type": "mcq",
+      "question": "람다 표현식이 할당되는 인터페이스는 어떤 조건을 만족해야 하는가?",
+      "options": {
+        "A": "추상 메서드가 반드시 하나만 존재해야 한다",
+        "B": "모든 메서드가 구현되어 있어야 한다",
+        "C": "두 개 이상의 추상 메서드를 가져야 한다",
+        "D": "default 메서드만 있어야 한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m5",
+      "type": "mcq",
+      "question": "자바에서 함수형 인터페이스를 명시하기 위해 사용하는 어노테이션은?",
+      "options": {
+        "A": "@Override",
+        "B": "@FunctionalInterface",
+        "C": "@Deprecated",
+        "D": "@SuppressWarnings"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m6",
+      "type": "mcq",
+      "question": "람다 표현식에서 매개변수의 타입을 생략할 수 있는 이유는 무엇인가?",
+      "options": {
+        "A": "타겟 타입이 추론되기 때문",
+        "B": "컴파일러가 자동으로 결정하기 때문",
+        "C": "코드의 간결성을 위해",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m7",
+      "type": "mcq",
+      "question": "람다 표현식에서 실행문이 하나일 경우 중괄호를 생략할 수 있는 이유는?",
+      "options": {
+        "A": "단일 표현식으로 처리되기 때문",
+        "B": "리턴값이 없기 때문",
+        "C": "익명 클래스와 동일하기 때문",
+        "D": "매개변수의 타입이 Object로 고정되기 때문"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m8",
+      "type": "mcq",
+      "question": "람다 표현식 내부에서 this 키워드가 참조하는 대상은?",
+      "options": {
+        "A": "람다 표현식 자신",
+        "B": "익명 내부 클래스",
+        "C": "외부 클래스의 인스턴스",
+        "D": "매개변수"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u8m9",
+      "type": "mcq",
+      "question": "함수형 인터페이스가 반드시 추상 메서드를 하나만 가져야 하는 이유는?",
+      "options": {
+        "A": "타겟 타입 결정의 용이성",
+        "B": "람다 표현식이 단일 메서드 구현으로 대체되기 때문",
+        "C": "컴파일러가 함수형 인터페이스를 인식하기 위함",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m10",
+      "type": "mcq",
+      "question": "람다 표현식으로 표현할 수 없는 경우는?",
+      "options": {
+        "A": "익명 내부 클래스 사용 시",
+        "B": "추상 메서드가 두 개 이상 있는 인터페이스",
+        "C": "단일 메서드 인터페이스",
+        "D": "정적 메서드 호출 시"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m11",
+      "type": "mcq",
+      "question": "람다 표현식과 익명 내부 클래스의 차이점으로 올바른 것은?",
+      "options": {
+        "A": "코드 길이",
+        "B": "this 키워드의 의미",
+        "C": "가독성",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m12",
+      "type": "mcq",
+      "question": "단일 표현식으로 이루어진 람다 표현식에서 return 키워드를 생략할 수 있는 이유는?",
+      "options": {
+        "A": "컴파일러가 자동으로 리턴값을 처리하기 때문",
+        "B": "리턴값이 없기 때문",
+        "C": "람다 표현식은 항상 void를 리턴하기 때문",
+        "D": "매개변수의 타입이 생략되기 때문"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m13",
+      "type": "mcq",
+      "question": "람다 표현식에서 매개변수가 하나일 때 괄호를 생략할 수 있는가?",
+      "options": {
+        "A": "예",
+        "B": "아니오",
+        "C": "조건부로 가능하다",
+        "D": "매개변수 타입에 따라 다르다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m14",
+      "type": "mcq",
+      "question": "람다 표현식의 간결함이 주는 가장 큰 장점은 무엇인가?",
+      "options": {
+        "A": "코드 중복 제거",
+        "B": "가독성 향상",
+        "C": "익명 클래스의 복잡성 감소",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m15",
+      "type": "mcq",
+      "question": "람다 표현식에서 '클래스명::new' 형식은 무엇을 의미하는가?",
+      "options": {
+        "A": "정적 메서드 참조",
+        "B": "생성자 참조",
+        "C": "인스턴스 메서드 참조",
+        "D": "메서드 오버라이딩"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m16",
+      "type": "mcq",
+      "question": "람다 표현식에서 '객체::인스턴스메서드' 형식의 예로 올바른 것은?",
+      "options": {
+        "A": "System.out::println",
+        "B": "Math::max",
+        "C": "String::length",
+        "D": "Integer::parseInt"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m17",
+      "type": "mcq",
+      "question": "람다 표현식에서 '클래스::정적메서드' 형식의 예로 옳은 것은?",
+      "options": {
+        "A": "Math::abs",
+        "B": "this::toString",
+        "C": "System.out::println",
+        "D": "new String"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m18",
+      "type": "mcq",
+      "question": "람다 표현식의 타겟 타입은 언제 결정되는가?",
+      "options": {
+        "A": "컴파일 타임",
+        "B": "런타임",
+        "C": "배포 시",
+        "D": "실행 시"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m19",
+      "type": "mcq",
+      "question": "람다 표현식에서 매개변수가 없는 경우 괄호는 어떻게 표현하는가?",
+      "options": {
+        "A": "생략한다",
+        "B": "()로 표현한다",
+        "C": "( )와 {}를 동시에 사용한다",
+        "D": "매개변수가 없으면 오류가 발생한다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m20",
+      "type": "mcq",
+      "question": "람다 표현식의 간결한 문법이 개선하는 점은 무엇인가?",
+      "options": {
+        "A": "코드 가독성",
+        "B": "코드 작성 시간",
+        "C": "익명 내부 클래스의 복잡성",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m21",
+      "type": "mcq",
+      "question": "Stream API는 어느 Java 버전부터 도입되었는가?",
+      "options": {
+        "A": "Java 6",
+        "B": "Java 7",
+        "C": "Java 8",
+        "D": "Java 9"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u8m22",
+      "type": "mcq",
+      "question": "Stream API의 주요 특징 중 틀린 것은?",
+      "options": {
+        "A": "데이터 소스를 직접 변경한다",
+        "B": "중간 연산과 최종 연산으로 구성된다",
+        "C": "병렬 처리를 지원한다",
+        "D": "내부 반복자를 사용한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m23",
+      "type": "mcq",
+      "question": "Stream API에서 요소를 필터링할 때 사용되는 메서드는?",
+      "options": {
+        "A": "map()",
+        "B": "filter()",
+        "C": "reduce()",
+        "D": "collect()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m24",
+      "type": "mcq",
+      "question": "Stream API의 distinct() 메서드는 어떤 기능을 수행하는가?",
+      "options": {
+        "A": "스트림의 요소를 정렬한다",
+        "B": "중복된 요소를 제거한다",
+        "C": "스트림의 요소를 복제한다",
+        "D": "스트림의 요소를 필터링한다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m25",
+      "type": "mcq",
+      "question": "Stream API에서 limit() 메서드의 역할은 무엇인가?",
+      "options": {
+        "A": "스트림의 첫 n개 요소만 남긴다",
+        "B": "스트림의 요소를 건너뛴다",
+        "C": "스트림의 중복 요소를 제거한다",
+        "D": "스트림의 요소를 정렬한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m26",
+      "type": "mcq",
+      "question": "Stream API에서 skip() 메서드의 역할은 무엇인가?",
+      "options": {
+        "A": "앞의 n개 요소를 건너뛴다",
+        "B": "요소를 정렬한다",
+        "C": "요소의 합계를 구한다",
+        "D": "요소를 복제한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m27",
+      "type": "mcq",
+      "question": "Stream API의 map() 메서드는 주로 어떤 기능을 수행하는가?",
+      "options": {
+        "A": "요소 변환",
+        "B": "요소 필터링",
+        "C": "요소 집계",
+        "D": "요소 반복"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m28",
+      "type": "mcq",
+      "question": "Stream API의 reduce() 메서드는 무엇을 수행하는가?",
+      "options": {
+        "A": "요소를 하나로 결합하여 결과를 생성한다",
+        "B": "스트림의 요소를 필터링한다",
+        "C": "스트림의 요소를 정렬한다",
+        "D": "스트림을 배열로 변환한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m29",
+      "type": "mcq",
+      "question": "Stream API의 forEach() 메서드는 최종 연산에 속하는가?",
+      "options": {
+        "A": "예",
+        "B": "아니오",
+        "C": "조건부로",
+        "D": "스트림에 따라 다르다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m30",
+      "type": "mcq",
+      "question": "Stream API에서 parallelStream() 메서드의 목적은 무엇인가?",
+      "options": {
+        "A": "스트림 요소를 병렬로 처리한다",
+        "B": "스트림 요소를 순차적으로 처리한다",
+        "C": "스트림 요소를 정렬한다",
+        "D": "스트림 요소를 필터링한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m31",
+      "type": "mcq",
+      "question": "Stream API에서 forEach() 메서드의 파라미터로 사용되는 함수형 인터페이스는 무엇인가?",
+      "options": {
+        "A": "Function",
+        "B": "Predicate",
+        "C": "Consumer",
+        "D": "Supplier"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u8m32",
+      "type": "mcq",
+      "question": "Stream API에서 reduce() 메서드의 파라미터로 주로 사용되는 함수형 인터페이스는 무엇인가?",
+      "options": {
+        "A": "BinaryOperator",
+        "B": "UnaryOperator",
+        "C": "BiFunction",
+        "D": "Comparator"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m33",
+      "type": "mcq",
+      "question": "Stream API의 collect() 메서드는 어떤 종류의 연산인가?",
+      "options": {
+        "A": "중간 연산",
+        "B": "최종 연산",
+        "C": "스트림 생성 연산",
+        "D": "변환 연산"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m34",
+      "type": "mcq",
+      "question": "람다 표현식과 메서드 참조 중, 메서드 참조가 주로 사용되는 이유는 무엇인가?",
+      "options": {
+        "A": "더 간결한 코드 작성",
+        "B": "코드 중복 제거",
+        "C": "가독성 향상",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m35",
+      "type": "mcq",
+      "question": "Stream API의 sorted() 메서드는 기본적으로 어떤 정렬을 수행하는가?",
+      "options": {
+        "A": "내림차순",
+        "B": "오름차순",
+        "C": "무작위",
+        "D": "정렬하지 않는다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m36",
+      "type": "mcq",
+      "question": "Stream API의 toArray() 메서드는 무엇을 반환하는가?",
+      "options": {
+        "A": "List",
+        "B": "배열",
+        "C": "Set",
+        "D": "Map"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m37",
+      "type": "mcq",
+      "question": "람다 표현식에서 여러 문장이 있는 실행 블록은 반드시 무엇으로 감싸야 하는가?",
+      "options": {
+        "A": "대괄호 []",
+        "B": "소괄호 ()",
+        "C": "중괄호 {}",
+        "D": "따옴표 \"\""
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u8m38",
+      "type": "mcq",
+      "question": "Stream API에서 flatMap() 메서드의 주된 역할은 무엇인가?",
+      "options": {
+        "A": "각 요소를 평탄화하여 하나의 스트림으로 합친다",
+        "B": "스트림의 요소를 필터링한다",
+        "C": "스트림의 요소를 정렬한다",
+        "D": "스트림의 요소를 그룹화한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m39",
+      "type": "mcq",
+      "question": "람다 표현식의 단점으로 옳지 않은 것은?",
+      "options": {
+        "A": "디버깅이 어렵다",
+        "B": "코드가 지나치게 간결해져 가독성이 떨어질 수 있다",
+        "C": "복잡한 로직을 표현하기에 부적합하다",
+        "D": "모든 경우에 성능이 크게 저하된다"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m40",
+      "type": "mcq",
+      "question": "Stream API의 collect() 메서드를 사용할 때, 결과를 누적하는 Collector를 제공하는 클래스는?",
+      "options": {
+        "A": "Collectors",
+        "B": "Collection",
+        "C": "Arrays",
+        "D": "Stream"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m41",
+      "type": "mcq",
+      "question": "람다 표현식과 Stream API가 도입된 주요 이유는 무엇인가?",
+      "options": {
+        "A": "코드의 간결성과 가독성 향상",
+        "B": "병렬 처리를 쉽게 구현하기 위해",
+        "C": "함수형 프로그래밍 패러다임을 도입하기 위해",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m42",
+      "type": "mcq",
+      "question": "Stream API에서 parallelStream()과 stream()의 차이는 무엇인가?",
+      "options": {
+        "A": "parallelStream()은 병렬 처리를 지원한다",
+        "B": "stream()은 병렬 처리를 지원한다",
+        "C": "둘은 동일하다",
+        "D": "둘 다 병렬 처리를 지원하지 않는다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m43",
+      "type": "mcq",
+      "question": "람다 표현식에서 's -> System.out.println(s)'와 'System.out::println'의 차이점은?",
+      "options": {
+        "A": "전자는 람다 표현식, 후자는 메서드 참조이다",
+        "B": "둘은 기능상 동일하다",
+        "C": "전자는 실행 블록이 필요하다",
+        "D": "후자는 익명 클래스이다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m44",
+      "type": "mcq",
+      "question": "람다 표현식에서 return 문을 생략할 수 있는 조건은 무엇인가?",
+      "options": {
+        "A": "실행문이 단일 표현식일 때",
+        "B": "매개변수가 없을 때",
+        "C": "타입이 자동 추론될 때",
+        "D": "항상 생략할 수 있다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m45",
+      "type": "mcq",
+      "question": "Stream API의 distinct() 메서드는 내부적으로 어떤 메서드를 이용하여 중복을 제거하는가?",
+      "options": {
+        "A": "equals()와 hashCode()",
+        "B": "compareTo()",
+        "C": "toString()",
+        "D": "size()"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m46",
+      "type": "mcq",
+      "question": "Stream API의 collect() 메서드는 스트림을 어떤 결과로 변환하는가?",
+      "options": {
+        "A": "배열",
+        "B": "컬렉션 또는 다른 결과",
+        "C": "정수",
+        "D": "문자열"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m47",
+      "type": "mcq",
+      "question": "람다 표현식에서 여러 문장이 있을 때 중괄호를 반드시 사용해야 하는 이유는?",
+      "options": {
+        "A": "여러 문장을 구분하기 위해",
+        "B": "컴파일러 오류를 방지하기 위해",
+        "C": "명시적으로 코드 블록을 나타내기 위해",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8m48",
+      "type": "mcq",
+      "question": "Stream API의 sorted() 메서드를 사용하면 기본적으로 어떤 정렬 기준을 따른는가?",
+      "options": {
+        "A": "내림차순",
+        "B": "오름차순",
+        "C": "무작위",
+        "D": "정렬하지 않는다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u8m49",
+      "type": "mcq",
+      "question": "람다 표현식에서 메서드 참조의 형식 '클래스명::정적메서드'는 어떤 특징이 있는가?",
+      "options": {
+        "A": "코드가 더욱 간결해진다",
+        "B": "타입 추론이 불가능하다",
+        "C": "익명 내부 클래스보다 느리다",
+        "D": "메서드 참조는 사용할 수 없다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u8m50",
+      "type": "mcq",
+      "question": "Stream API를 사용하여 병렬 처리를 구현할 때, 주의해야 할 점은 무엇인가?",
+      "options": {
+        "A": "상태 없는 연산을 사용해야 한다",
+        "B": "순서 보장이 필요하지 않은 경우에 사용해야 한다",
+        "C": "데이터 소스가 스레드 안전해야 한다",
+        "D": "위 모두"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u8c1",
+      "type": "code",
+      "question": "람다 표현식을 사용하여 문자열을 출력하는 Runnable을 작성하시오.",
+      "codeSnippet": "Runnable r = () -> __;\nr.run();",
+      "answers": ["System.out.println(\"Hello Lambda\")"]
+    },
+    {
+      "id": "u8c2",
+      "type": "code",
+      "question": "람다 표현식을 사용하여 두 수의 합을 반환하는 BiFunction을 작성하시오.",
+      "codeSnippet": "BiFunction<Integer, Integer, Integer> add = (a, b) -> __;\nint result = add.apply(5, 3);",
+      "answers": ["a + b"]
+    },
+    {
+      "id": "u8c3",
+      "type": "code",
+      "question": "람다 표현식을 사용하여 리스트의 모든 요소를 출력하는 코드를 작성하시오.",
+      "codeSnippet": "list.forEach(item -> __);",
+      "answers": ["System.out.println(item)"]
+    },
+    {
+      "id": "u8c4",
+      "type": "code",
+      "question": "메서드 참조를 사용하여 문자열 배열을 정렬하는 코드를 작성하시오.",
+      "codeSnippet": "Arrays.sort(arr, String::__);",
+      "answers": ["compareTo"]
+    },
+    {
+      "id": "u8c5",
+      "type": "code",
+      "question": "람다 표현식에서 매개변수가 하나인 경우 괄호를 생략한 예제를 작성하시오.",
+      "codeSnippet": "Consumer<String> printer = __ -> System.out.println(__);\nprinter.accept(\"Test\");",
+      "answers": ["s", "s"]
+    },
+    {
+      "id": "u8c6",
+      "type": "code",
+      "question": "람다 표현식에서 여러 문장을 실행할 때 사용하는 블록 구문을 작성하시오.",
+      "codeSnippet": "Runnable r = () -> { __; __; };\nr.run();",
+      "answers": [
+        "System.out.println(\"Line1\")",
+        "System.out.println(\"Line2\")"
+      ]
+    },
+    {
+      "id": "u8c7",
+      "type": "code",
+      "question": "람다 표현식에서 return문이 포함된 Function을 작성하시오.",
+      "codeSnippet": "Function<Integer, Integer> doubleValue = x -> { __; };\nint result = doubleValue.apply(4);",
+      "answers": ["return x * 2"]
+    },
+    {
+      "id": "u8c8",
+      "type": "code",
+      "question": "메서드 참조를 사용하여 Math 클래스의 정적 메서드 random()을 호출하는 코드를 작성하시오.",
+      "codeSnippet": "Supplier<Double> sup = Math::__;\ndouble d = sup.get();",
+      "answers": ["random"]
+    },
+    {
+      "id": "u8c9",
+      "type": "code",
+      "question": "람다 표현식에서 인스턴스 메서드 참조를 사용하여 문자열의 길이를 구하는 코드를 작성하시오.",
+      "codeSnippet": "Function<String, Integer> func = __::length;\nint len = func.apply(\"Lambda\");",
+      "answers": ["String"]
+    },
+    {
+      "id": "u8c10",
+      "type": "code",
+      "question": "람다 표현식 내부에서 외부 클래스의 멤버 변수를 참조하는 예제를 작성하시오.",
+      "codeSnippet": "class Outer {\n    int value = 10;\n    void test() {\n        Runnable r = () -> { __; };\n        r.run();\n    }\n}\n",
+      "answers": ["System.out.println(this.value)"]
+    },
+    {
+      "id": "u8c11",
+      "type": "code",
+      "question": "Stream API를 사용하여 문자열 리스트에서 길이가 4 이상인 요소만 필터링하는 코드를 작성하시오.",
+      "codeSnippet": "List<String> result = list.stream().filter(s -> __).collect(Collectors.toList());",
+      "answers": ["s.length() >= 4"]
+    },
+    {
+      "id": "u8c12",
+      "type": "code",
+      "question": "Stream API를 사용하여 0부터 100까지 정수 중 짝수의 합을 구하는 코드를 작성하시오.",
+      "codeSnippet": "int sum = IntStream.range(0, 100).filter(n -> __).sum();",
+      "answers": ["n % 2 == 0"]
+    },
+    {
+      "id": "u8c13",
+      "type": "code",
+      "question": "Stream API의 limit() 메서드를 사용하여 스트림의 첫 5개 요소만 출력하는 코드를 작성하시오.",
+      "codeSnippet": "list.stream().limit(__).forEach(System.out::println);",
+      "answers": ["5"]
+    },
+    {
+      "id": "u8c14",
+      "type": "code",
+      "question": "Stream API의 skip() 메서드를 사용하여 스트림의 첫 3개 요소를 건너뛰고 출력하는 코드를 작성하시오.",
+      "codeSnippet": "list.stream().skip(__).forEach(System.out::println);",
+      "answers": ["3"]
+    },
+    {
+      "id": "u8c15",
+      "type": "code",
+      "question": "Stream API의 map() 메서드를 사용하여 문자열 리스트의 모든 요소를 대문자로 변환하는 코드를 작성하시오.",
+      "codeSnippet": "List<String> upper = list.stream().map(s -> __).collect(Collectors.toList());",
+      "answers": ["s.toUpperCase()"]
+    },
+    {
+      "id": "u8c16",
+      "type": "code",
+      "question": "Stream API의 reduce() 메서드를 사용하여 리스트의 모든 요소의 합을 구하는 코드를 작성하시오.",
+      "codeSnippet": "int total = list.stream().reduce(0, (a, b) -> __);",
+      "answers": ["a + b"]
+    },
+    {
+      "id": "u8c17",
+      "type": "code",
+      "question": "Stream API의 forEach() 메서드를 사용하여 각 요소를 출력하는 코드를 작성하시오.",
+      "codeSnippet": "list.stream().forEach(__::println);",
+      "answers": ["System.out"]
+    },
+    {
+      "id": "u8c18",
+      "type": "code",
+      "question": "Stream API를 사용하여 문자열 리스트의 중복 요소를 제거하는 코드를 작성하시오.",
+      "codeSnippet": "List<String> unique = list.stream().__().collect(Collectors.toList());",
+      "answers": ["distinct"]
+    },
+    {
+      "id": "u8c19",
+      "type": "code",
+      "question": "Stream API의 collect() 메서드를 사용하여 스트림을 리스트로 변환하는 코드를 작성하시오.",
+      "codeSnippet": "List<String> newList = stream.collect(__.toList());",
+      "answers": ["Collectors"]
+    },
+    {
+      "id": "u8c20",
+      "type": "code",
+      "question": "람다 표현식에서 매개변수가 없는 경우, 빈 괄호를 사용한 예제를 작성하시오.",
+      "codeSnippet": "Supplier<String> sup = () -> __;\nString s = sup.get();",
+      "answers": ["\"Hello\""]
+    },
+    {
+      "id": "u8c21",
+      "type": "code",
+      "question": "Stream API의 IntStream.range() 메서드를 사용하여 0부터 9까지의 정수 스트림을 생성하는 코드를 작성하시오.",
+      "codeSnippet": "IntStream stream = IntStream.range(__, __);",
+      "answers": ["0", "10"]
+    },
+    {
+      "id": "u8c22",
+      "type": "code",
+      "question": "람다 표현식에서 매개변수가 하나인 경우 괄호를 생략한 예제를 작성하시오.",
+      "codeSnippet": "Consumer<Integer> cons = __ -> System.out.println(__);\ncons.accept(5);",
+      "answers": ["n", "n"]
+    },
+    {
+      "id": "u8c23",
+      "type": "code",
+      "question": "Arrays 클래스의 stream() 메서드를 사용하여 문자열 배열을 스트림으로 변환하는 코드를 작성하시오.",
+      "codeSnippet": "Stream<String> stream = Arrays.__(arr);",
+      "answers": ["stream"]
+    },
+    {
+      "id": "u8c24",
+      "type": "code",
+      "question": "Stream API의 sorted() 메서드를 사용하여 스트림을 오름차순으로 정렬하는 코드를 작성하시오.",
+      "codeSnippet": "List<String> sorted = list.stream().__().collect(Collectors.toList());",
+      "answers": ["sorted"]
+    },
+    {
+      "id": "u8c25",
+      "type": "code",
+      "question": "람다 표현식에서 여러 문장이 있을 경우 중괄호를 사용하여 코드를 작성하는 예제를 작성하시오.",
+      "codeSnippet": "Runnable r = () -> { __; __; };\nr.run();",
+      "answers": [
+        "System.out.println(\"Start\")",
+        "System.out.println(\"End\")"
+      ]
+    },
+    {
+      "id": "u8s1",
+      "type": "subjective",
+      "question": "람다 표현식의 정의와 그 장점에 대해 서술하시오.",
+      "correctAnswer": "람다 표현식은 익명 함수 형태로, 코드를 간결하게 작성할 수 있으며 익명 내부 클래스의 복잡성을 줄여 가독성을 향상시킨다."
+    },
+    {
+      "id": "u8s2",
+      "type": "subjective",
+      "question": "함수형 인터페이스란 무엇이며, 람다 표현식과의 관계에 대해 설명하시오.",
+      "correctAnswer": "함수형 인터페이스는 단 하나의 추상 메서드만을 가진 인터페이스로, 람다 표현식은 이 인터페이스의 구현으로 할당되어 간결하게 코드를 작성할 수 있게 해준다."
+    },
+    {
+      "id": "u8s3",
+      "type": "subjective",
+      "question": "람다 표현식에서 매개변수의 타입이 생략되는 이유와 그 원리를 설명하시오.",
+      "correctAnswer": "람다 표현식은 할당되는 함수형 인터페이스의 메서드 시그니처를 통해 매개변수의 타입을 컴파일러가 추론할 수 있기 때문에 타입을 생략할 수 있다."
+    },
+    {
+      "id": "u8s4",
+      "type": "subjective",
+      "question": "람다 표현식 내부에서 this 키워드의 의미에 대해 설명하시오.",
+      "correctAnswer": "람다 표현식 내부의 this는 해당 람다가 정의된 외부 클래스의 인스턴스를 참조한다."
+    },
+    {
+      "id": "u8s5",
+      "type": "subjective",
+      "question": "메서드 참조와 람다 표현식의 차이점 및 각각의 장단점에 대해 서술하시오.",
+      "correctAnswer": "메서드 참조는 기존 메서드를 간단히 호출할 수 있게 해주어 코드가 간결해지지만, 람다 표현식은 복잡한 로직 구현에 더 유연하다."
+    },
+    {
+      "id": "u8s6",
+      "type": "subjective",
+      "question": "Stream API의 중간 연산과 최종 연산의 차이점에 대해 설명하시오.",
+      "correctAnswer": "중간 연산은 스트림을 변환하는 작업으로 새로운 스트림을 반환하며, 최종 연산은 결과를 도출하고 스트림을 소모하여 재사용할 수 없다."
+    },
+    {
+      "id": "u8s7",
+      "type": "subjective",
+      "question": "Stream API의 filter() 메서드가 어떻게 동작하는지 설명하시오.",
+      "correctAnswer": "filter() 메서드는 Predicate 함수를 적용하여, 조건에 맞는 요소들만을 포함하는 새로운 스트림을 생성한다."
+    },
+    {
+      "id": "u8s8",
+      "type": "subjective",
+      "question": "Stream API의 map() 메서드가 데이터를 어떻게 변환하는지 서술하시오.",
+      "correctAnswer": "map() 메서드는 각 요소에 주어진 Function을 적용하여 변환된 결과를 포함하는 새로운 스트림을 반환한다."
+    },
+    {
+      "id": "u8s9",
+      "type": "subjective",
+      "question": "Stream API의 reduce() 메서드의 활용 사례와 그 의미에 대해 서술하시오.",
+      "correctAnswer": "reduce() 메서드는 스트림의 모든 요소를 하나의 결과로 축소(reduction)하는데 사용되며, 예를 들어 합계, 곱, 최대/최소 값을 구하는데 활용된다."
+    },
+    {
+      "id": "u8s10",
+      "type": "subjective",
+      "question": "Stream API의 병렬 처리 기능의 장점과 단점에 대해 설명하시오.",
+      "correctAnswer": "병렬 처리는 멀티코어 환경에서 성능을 향상시키지만, 스레드 안전하지 않은 연산에서는 문제가 발생할 수 있으며, 오버헤드가 발생할 수 있다."
+    },
+    {
+      "id": "u8s11",
+      "type": "subjective",
+      "question": "람다 표현식과 Stream API가 Java 8에서 도입된 주요 이유와 그에 따른 프로그래밍 방식의 변화를 설명하시오.",
+      "correctAnswer": "람다 표현식과 Stream API는 함수형 프로그래밍 패러다임을 도입하여 코드의 간결성과 가독성을 향상시키고, 병렬 처리와 내부 반복자 사용을 통해 생산성을 크게 높였다."
+    },
+    {
+      "id": "u8s12",
+      "type": "subjective",
+      "question": "람다 표현식에서 단일 표현식의 경우 중괄호와 return 키워드를 생략할 수 있는 조건과 한계에 대해 설명하시오.",
+      "correctAnswer": "단일 표현식만 존재할 경우 중괄호와 return 키워드를 생략할 수 있으나, 여러 문장이 있을 경우 반드시 중괄호로 감싸야 하며, 이 경우 return 키워드를 명시해야 한다."
+    },
+    {
+      "id": "u8s13",
+      "type": "subjective",
+      "question": "람다 표현식과 익명 내부 클래스의 차이점에 대해 논하시오.",
+      "correctAnswer": "람다 표현식은 코드가 간결하고 외부 클래스의 this를 그대로 참조하는 반면, 익명 내부 클래스는 별도의 클래스로 동작하며 this가 익명 클래스 자신을 참조한다."
+    },
+    {
+      "id": "u8s14",
+      "type": "subjective",
+      "question": "Stream API의 distinct() 메서드의 내부 동작 방식과 활용 예에 대해 설명하시오.",
+      "correctAnswer": "distinct() 메서드는 요소들의 equals()와 hashCode()를 이용해 중복 여부를 판단하여, 중복된 요소를 제거한 새로운 스트림을 반환한다."
+    },
+    {
+      "id": "u8s15",
+      "type": "subjective",
+      "question": "Stream API의 skip()과 limit() 메서드를 함께 사용하여 특정 범위의 요소를 선택하는 방법에 대해 서술하시오.",
+      "correctAnswer": "skip()은 앞의 n개 요소를 건너뛰고, limit()은 그 이후의 요소 중 지정한 개수만 남기므로, 두 메서드를 조합하면 원하는 범위의 요소만 선택할 수 있다."
+    },
+    {
+      "id": "u8s16",
+      "type": "subjective",
+      "question": "Stream API의 forEach() 메서드와 전통적인 for문을 비교하여 각각의 장단점을 논하시오.",
+      "correctAnswer": "forEach()는 코드가 간결하고 내부 반복자를 사용하여 구현되지만, 디버깅이 어렵고 반복 제어가 제한적이며, 전통적인 for문은 유연한 제어가 가능하다."
+    },
+    {
+      "id": "u8s17",
+      "type": "subjective",
+      "question": "람다 표현식에서 변수 캡처(closure)의 개념과 그 제약 조건에 대해 설명하시오.",
+      "correctAnswer": "람다 표현식은 외부의 final 또는 effectively final 변수들을 캡처할 수 있으며, 캡처된 변수는 수정할 수 없으므로 불변성을 유지해야 한다."
+    },
+    {
+      "id": "u8s18",
+      "type": "subjective",
+      "question": "Stream API의 map()과 flatMap() 메서드의 차이점에 대해 논하시오.",
+      "correctAnswer": "map()은 각 요소를 다른 값으로 변환하여 새로운 스트림을 만들고, flatMap()은 각 요소가 스트림을 반환할 때 이를 평탄화하여 하나의 단일 스트림으로 합친다."
+    },
+    {
+      "id": "u8s19",
+      "type": "subjective",
+      "question": "람다 표현식에서 타입 추론이 이루어지는 원리를 설명하시오.",
+      "correctAnswer": "컴파일러는 람다 표현식이 대입되는 함수형 인터페이스의 추상 메서드 시그니처를 기준으로 매개변수와 리턴 타입을 추론한다."
+    },
+    {
+      "id": "u8s20",
+      "type": "subjective",
+      "question": "Stream API의 병렬 처리 기능을 사용할 때 고려해야 할 점에 대해 서술하시오.",
+      "correctAnswer": "병렬 스트림은 상태 없는 연산과 스레드 안전한 자료구조를 사용해야 하며, 작업 분할 및 병합 과정에서 오버헤드가 발생할 수 있으므로 신중하게 사용해야 한다."
+    },
+    {
+      "id": "u8s21",
+      "type": "subjective",
+      "question": "람다 표현식과 메서드 참조를 사용하여 코드 간결성을 높이는 방법에 대해 논하시오.",
+      "correctAnswer": "람다 표현식은 익명 클래스를 대체하여 코드를 간결하게 만들고, 메서드 참조는 기존 메서드를 재사용하여 불필요한 중복 코드를 제거하는 데 기여한다."
+    },
+    {
+      "id": "u8s22",
+      "type": "subjective",
+      "question": "Stream API의 distinct() 메서드가 내부적으로 어떻게 동작하는지 설명하시오.",
+      "correctAnswer": "distinct()는 각 요소의 equals()와 hashCode() 메서드를 사용하여 중복 여부를 판단하고, 중복된 요소를 제거한 새로운 스트림을 반환한다."
+    },
+    {
+      "id": "u8s23",
+      "type": "subjective",
+      "question": "Stream API의 collect() 메서드를 사용하여 스트림을 컬렉션으로 변환하는 과정을 설명하시오.",
+      "correctAnswer": "collect() 메서드는 Collector 인터페이스를 통해 스트림의 요소를 누적하고, 최종적으로 리스트, 셋 등의 컬렉션으로 변환한다."
+    },
+    {
+      "id": "u8s24",
+      "type": "subjective",
+      "question": "람다 표현식이 Java 8에 도입된 주요 이유와 그에 따른 프로그래밍 패러다임의 변화를 서술하시오.",
+      "correctAnswer": "람다 표현식은 함수형 프로그래밍을 도입하여 코드의 간결성과 가독성을 향상시키고, 병렬 처리와 내부 반복자를 통해 생산성을 높이며, 기존의 익명 클래스를 대체하는 혁신적인 문법이다."
+    },
+    {
+      "id": "u8s25",
+      "type": "subjective",
+      "question": "Stream API와 기존의 for문, Iterator 방식의 차이점과 그 장단점에 대해 논하시오.",
+      "correctAnswer": "Stream API는 내부 반복자와 함수형 연산을 통해 코드가 간결하며 병렬 처리를 지원하지만, 디버깅이 어려울 수 있고, 한 번 최종 연산 후 재사용이 불가능하다. 반면, 전통적인 for문과 Iterator는 명시적 제어가 가능하나 코드가 장황하다."
+    }
   ]
 }
