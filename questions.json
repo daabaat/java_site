@@ -4635,5 +4635,932 @@
       "question": "자바에서 추상 클래스와 인터페이스를 함께 사용할 때의 장점과 단점에 대해 논하시오.",
       "correctAnswer": "추상 클래스와 인터페이스를 함께 사용하면, 공통 기능과 계약을 분리하여 코드 재사용성과 유연성을 높일 수 있지만, 설계가 복잡해지고 클래스 간 결합도가 증가할 위험이 있다."
     }
+  ],
+  "unit6":[
+    {
+      "id": "u6m1",
+      "type": "mcq",
+      "question": "제너릭의 주 목적은 무엇인가?",
+      "options": {
+        "A": "코드 재사용",
+        "B": "타입 안전성 향상",
+        "C": "런타임 성능 개선",
+        "D": "디자인 패턴 구현"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m2",
+      "type": "mcq",
+      "question": "제너릭 클래스 선언 시, 타입 파라미터를 감싸는 기호는 무엇인가?",
+      "options": {
+        "A": "()",
+        "B": "[]",
+        "C": "<>",
+        "D": "{}"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m3",
+      "type": "mcq",
+      "question": "Raw Type이란 무엇인가?",
+      "options": {
+        "A": "타입 파라미터가 없는 제너릭 클래스",
+        "B": "타입 파라미터가 명시된 클래스",
+        "C": "모든 타입 파라미터를 Object로 처리하는 타입",
+        "D": "컴파일 타임에 에러가 나는 타입"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m4",
+      "type": "mcq",
+      "question": "제너릭에서 Type Erasure의 의미는 무엇인가?",
+      "options": {
+        "A": "타입 정보가 런타임에 유지된다",
+        "B": "타입 정보가 컴파일 타임에 삭제된다",
+        "C": "타입 파라미터가 자동으로 변환된다",
+        "D": "타입 파라미터가 static 멤버로 전환된다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m5",
+      "type": "mcq",
+      "question": "제너릭 메서드에서 타입 파라미터는 어디에 선언되는가?",
+      "options": {
+        "A": "메서드 리턴 타입 앞",
+        "B": "클래스 이름 뒤",
+        "C": "메서드 이름 뒤",
+        "D": "매개변수 앞"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m6",
+      "type": "mcq",
+      "question": "제너릭 배열 생성이 불가능한 이유는 무엇인가?",
+      "options": {
+        "A": "배열은 런타임에 타입 정보를 유지하기 때문이다",
+        "B": "배열은 런타임에 타입 정보가 소거되기 때문이다",
+        "C": "배열은 동적 크기를 가지기 때문이다",
+        "D": "컴파일러가 지원하지 않기 때문이다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m7",
+      "type": "mcq",
+      "question": "와일드카드 '?'의 주 목적은 무엇인가?",
+      "options": {
+        "A": "타입 제한을 제거하기 위해",
+        "B": "어떤 타입이든 허용하기 위해",
+        "C": "특정 타입만 허용하기 위해",
+        "D": "컴파일러 오류를 방지하기 위해"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m8",
+      "type": "mcq",
+      "question": "PECS 원칙에서 'Producer Extends'는 무엇을 의미하는가?",
+      "options": {
+        "A": "데이터를 소비하는 역할",
+        "B": "데이터를 생산하는 역할",
+        "C": "타입을 확장하는 역할",
+        "D": "타입을 제한하는 역할"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m9",
+      "type": "mcq",
+      "question": "PECS 원칙에서 'Consumer Super'는 무엇을 의미하는가?",
+      "options": {
+        "A": "데이터를 생산하는 역할",
+        "B": "데이터를 소비하는 역할",
+        "C": "타입의 상위를 제한하는 역할",
+        "D": "타입 안전성을 향상시키는 역할"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m10",
+      "type": "mcq",
+      "question": "다음 중 올바른 제너릭 클래스 선언은?",
+      "options": {
+        "A": "public class Box<T> {}",
+        "B": "public class Box<T> () {}",
+        "C": "public class Box<T> [] {}",
+        "D": "public class Box<T> {}[]"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m11",
+      "type": "mcq",
+      "question": "제너릭 인터페이스의 예로 알맞은 것은?",
+      "options": {
+        "A": "public interface List<E> {}",
+        "B": "public interface List<E> () {}",
+        "C": "public interface List<E> [] {}",
+        "D": "public interface List<E> {}[]"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m12",
+      "type": "mcq",
+      "question": "Raw Type 사용 시 컴파일러 경고를 억제하기 위한 어노테이션은?",
+      "options": {
+        "A": "@Override",
+        "B": "@SuppressWarnings",
+        "C": "@Deprecated",
+        "D": "@SafeVarargs"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m13",
+      "type": "mcq",
+      "question": "제너릭 메서드 선언에서 올바른 형태는?",
+      "options": {
+        "A": "public static <T> T method(T t) {}",
+        "B": "public <T> T method(T t) {}",
+        "C": "static <T> T method(T t) {}",
+        "D": "모두 올바르다"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u6m14",
+      "type": "mcq",
+      "question": "제너릭에서 bounded type parameter를 지정할 때 사용하는 키워드는?",
+      "options": {
+        "A": "extends",
+        "B": "implements",
+        "C": "super",
+        "D": "instanceof"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m15",
+      "type": "mcq",
+      "question": "다음 중 enum의 특징으로 올바른 것은?",
+      "options": {
+        "A": "enum은 클래스 상속을 허용한다.",
+        "B": "enum은 객체 생성이 가능하다.",
+        "C": "enum 상수는 모두 public static final이다.",
+        "D": "enum은 오직 추상 메서드만 포함할 수 있다."
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m16",
+      "type": "mcq",
+      "question": "enum 타입에서 열거 상수의 순서를 반환하는 메서드는?",
+      "options": {
+        "A": "name()",
+        "B": "ordinal()",
+        "C": "compareTo()",
+        "D": "valueOf()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m17",
+      "type": "mcq",
+      "question": "enum에서 열거 상수의 이름을 문자열로 반환하는 메서드는?",
+      "options": {
+        "A": "toString()",
+        "B": "name()",
+        "C": "ordinal()",
+        "D": "valueOf()"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m18",
+      "type": "mcq",
+      "question": "enum 상수를 배열로 반환하는 메서드는?",
+      "options": {
+        "A": "values()",
+        "B": "toArray()",
+        "C": "list()",
+        "D": "convert()"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m19",
+      "type": "mcq",
+      "question": "다음 중 enum의 생성자는 어떤 접근 제어자인가?",
+      "options": {
+        "A": "public",
+        "B": "protected",
+        "C": "private",
+        "D": "default"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m20",
+      "type": "mcq",
+      "question": "enum을 이용하여 switch-case문을 사용할 때 주의할 점은?",
+      "options": {
+        "A": "case에 enum 상수 앞에 enum 타입 이름을 붙여야 한다.",
+        "B": "case에 enum 상수만 사용해야 한다.",
+        "C": "switch 변수는 반드시 int 타입이어야 한다.",
+        "D": "enum은 switch-case에서 사용할 수 없다."
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m21",
+      "type": "mcq",
+      "question": "다음 중 annotation의 기능으로 옳은 것은?",
+      "options": {
+        "A": "코드 실행 시 동작을 변경한다.",
+        "B": "컴파일러에게 정보를 제공한다.",
+        "C": "메모리 사용량을 줄인다.",
+        "D": "런타임 성능을 향상시킨다."
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m22",
+      "type": "mcq",
+      "question": "자바의 기본 제공 annotation 중 해당 메서드가 재정의되었음을 알리는 것은?",
+      "options": {
+        "A": "@Override",
+        "B": "@Deprecated",
+        "C": "@SuppressWarnings",
+        "D": "@FunctionalInterface"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m23",
+      "type": "mcq",
+      "question": "자바 annotation에서 @Retention의 용도로 옳은 것은?",
+      "options": {
+        "A": "어노테이션이 적용될 대상 지정",
+        "B": "어노테이션의 유지 기간 결정",
+        "C": "어노테이션의 이름 변경",
+        "D": "어노테이션의 값을 수정"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m24",
+      "type": "mcq",
+      "question": "어노테이션을 문서화에 포함시키기 위해 사용하는 메타 어노테이션은?",
+      "options": {
+        "A": "@Documented",
+        "B": "@Inherited",
+        "C": "@Retention",
+        "D": "@Target"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m25",
+      "type": "mcq",
+      "question": "어노테이션에서 여러 개의 값을 반복해서 적용할 수 있게 해주는 어노테이션은?",
+      "options": {
+        "A": "@Inherited",
+        "B": "@Repeatable",
+        "C": "@Override",
+        "D": "@Deprecated"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m26",
+      "type": "mcq",
+      "question": "다음 중 제너릭 타입의 타입 파라미터로 사용할 수 없는 것은?",
+      "options": {
+        "A": "클래스",
+        "B": "인터페이스",
+        "C": "기본형",
+        "D": "열거형"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m27",
+      "type": "mcq",
+      "question": "다음 중 와일드카드의 올바른 사용 예시로 옳은 것은?",
+      "options": {
+        "A": "List<?>",
+        "B": "List<? extends Number>",
+        "C": "List<? super Integer>",
+        "D": "모두 옳다"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u6m28",
+      "type": "mcq",
+      "question": "제너릭 메서드를 호출할 때 타입 인자를 생략할 수 있는 이유는?",
+      "options": {
+        "A": "타입 추론 기능이 있기 때문이다.",
+        "B": "런타임에 타입 정보가 없기 때문이다.",
+        "C": "컴파일러가 기본 타입으로 대체하기 때문이다.",
+        "D": "자바 버전 1.5부터 허용된다."
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m29",
+      "type": "mcq",
+      "question": "제너릭의 타입 파라미터는 어느 시점에 결정되는가?",
+      "options": {
+        "A": "컴파일 타임",
+        "B": "런타임",
+        "C": "배포 시",
+        "D": "개발자에 의해"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m30",
+      "type": "mcq",
+      "question": "다음 중 GenericBox<Integer>[] 와 같이 제너릭 배열을 생성할 수 없는 이유는?",
+      "options": {
+        "A": "배열은 런타임에 타입 정보를 유지하기 때문이다.",
+        "B": "제너릭은 컴파일 타임에 타입 정보가 소거되기 때문이다.",
+        "C": "자바가 다중 상속을 지원하지 않기 때문이다.",
+        "D": "컴파일러가 이를 지원하지 않기 때문이다."
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m31",
+      "type": "mcq",
+      "question": "제너릭 메서드에서 타입 파라미터를 선언하는 위치는 어디인가?",
+      "options": {
+        "A": "메서드 이름 앞",
+        "B": "리턴 타입 뒤",
+        "C": "매개변수 목록 앞",
+        "D": "메서드 블록 내부"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m32",
+      "type": "mcq",
+      "question": "다음 중 제너릭의 한정형 형인자를 선언할 때 올바른 문법은?",
+      "options": {
+        "A": "public <T extends Number> void method()",
+        "B": "public <T super Number> void method()",
+        "C": "public <T: Number> void method()",
+        "D": "public <T implements Number> void method()"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m33",
+      "type": "mcq",
+      "question": "제너릭을 사용함으로써 얻을 수 있는 이점이 아닌 것은?",
+      "options": {
+        "A": "타입 안전성 보장",
+        "B": "코드 재사용성 향상",
+        "C": "컴파일 타임에 오류 발견",
+        "D": "런타임 성능 향상"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u6m34",
+      "type": "mcq",
+      "question": "Enum 타입은 기본적으로 어떤 클래스를 상속받는가?",
+      "options": {
+        "A": "java.lang.Object",
+        "B": "java.lang.Enum",
+        "C": "java.lang.String",
+        "D": "java.lang.Number"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m35",
+      "type": "mcq",
+      "question": "enum 상수에 추가 필드를 포함시키려면, 상수 선언 후 어떤 구분자를 사용해야 하는가?",
+      "options": {
+        "A": "콤마",
+        "B": "세미콜론",
+        "C": "콜론",
+        "D": "대시"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m36",
+      "type": "mcq",
+      "question": "enum에서 switch-case 문 사용 시, case 키워드에 사용되는 값은 무엇인가?",
+      "options": {
+        "A": "enum 타입 전체",
+        "B": "enum 상수 이름",
+        "C": "enum 상수의 ordinal 값",
+        "D": "enum 상수의 toString() 값"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m37",
+      "type": "mcq",
+      "question": "Annotation의 RetentionPolicy 값 중 런타임까지 어노테이션 정보를 유지하는 것은?",
+      "options": {
+        "A": "SOURCE",
+        "B": "CLASS",
+        "C": "RUNTIME",
+        "D": "DEBUG"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m38",
+      "type": "mcq",
+      "question": "Annotation의 Target 어노테이션은 무엇을 지정하는가?",
+      "options": {
+        "A": "어노테이션이 적용될 요소",
+        "B": "어노테이션의 유지 기간",
+        "C": "어노테이션의 기본값",
+        "D": "어노테이션의 상속 여부"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m39",
+      "type": "mcq",
+      "question": "다음 중 올바른 어노테이션 선언은?",
+      "options": {
+        "A": "public @interface MyAnnotation {}",
+        "B": "public annotation MyAnnotation {}",
+        "C": "public interface MyAnnotation {}",
+        "D": "public class MyAnnotation extends Annotation {}"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m40",
+      "type": "mcq",
+      "question": "어노테이션을 반복해서 사용할 수 있게 하는 메타 어노테이션은?",
+      "options": {
+        "A": "@Inherited",
+        "B": "@Documented",
+        "C": "@Repeatable",
+        "D": "@Target"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m41",
+      "type": "mcq",
+      "question": "어노테이션에 대해 잘못된 설명은?",
+      "options": {
+        "A": "어노테이션은 메타 데이터를 제공한다.",
+        "B": "어노테이션은 컴파일러에게 정보를 전달한다.",
+        "C": "어노테이션은 실행 시 동적으로 변경할 수 있다.",
+        "D": "어노테이션은 런타임까지 유지될 수 있다."
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": "u6m42",
+      "type": "mcq",
+      "question": "제너릭 클래스의 인스턴스 생성 시, 다이아몬드 연산자를 사용하는 이유는 무엇인가?",
+      "options": {
+        "A": "타입을 명시하지 않아도 되기 때문에",
+        "B": "타입 추론을 통해 코드가 간결해지기 때문에",
+        "C": "컴파일러가 자동으로 타입을 결정하기 때문에",
+        "D": "모두 옳다"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": "u6m43",
+      "type": "mcq",
+      "question": "제너릭에서 두 타입 파라미터 간에 상속 관계가 없을 경우, 서로 대입이 가능한가?",
+      "options": {
+        "A": "가능하다",
+        "B": "불가능하다",
+        "C": "조건부로 가능하다",
+        "D": "런타임에 가능하다"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m44",
+      "type": "mcq",
+      "question": "와일드카드 사용의 장점으로 옳은 것은?",
+      "options": {
+        "A": "모든 타입을 허용하여 유연성을 높인다",
+        "B": "타입 안전성을 완전히 보장한다",
+        "C": "컴파일 타임에 오류를 발생시킨다",
+        "D": "런타임에 타입 체크를 생략한다"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m45",
+      "type": "mcq",
+      "question": "enum과 일반 클래스를 비교할 때, enum이 가지는 고유의 장점은 무엇인가?",
+      "options": {
+        "A": "메모리 사용량 감소",
+        "B": "타입 안전한 상수 집합 제공",
+        "C": "더 빠른 실행 속도",
+        "D": "동적 객체 생성 가능"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m46",
+      "type": "mcq",
+      "question": "Annotation에서 @SuppressWarnings 어노테이션의 주 용도는 무엇인가?",
+      "options": {
+        "A": "컴파일러 경고를 억제하기 위해",
+        "B": "어노테이션 정보를 유지하기 위해",
+        "C": "런타임 오류를 방지하기 위해",
+        "D": "코드 실행을 최적화하기 위해"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m47",
+      "type": "mcq",
+      "question": "Generic 타입에서 와일드카드 <?>에 대한 올바른 설명은?",
+      "options": {
+        "A": "<?>는 아무런 타입 제한 없이 모든 타입을 의미한다.",
+        "B": "<?>는 기본형만 허용한다.",
+        "C": "<?>는 오직 Object 타입만 의미한다.",
+        "D": "<?>는 컴파일 시 에러를 발생시킨다."
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m48",
+      "type": "mcq",
+      "question": "다음 중 제너릭에서 상한 제한(Upper Bounded Wildcards)의 올바른 예시는?",
+      "options": {
+        "A": "List<? extends Number>",
+        "B": "List<? super Number>",
+        "C": "List<?>",
+        "D": "List<? extends Object>"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": "u6m49",
+      "type": "mcq",
+      "question": "다음 중 제너릭에서 하한 제한(Lower Bounded Wildcards)의 올바른 예시는?",
+      "options": {
+        "A": "List<? extends Integer>",
+        "B": "List<? super Integer>",
+        "C": "List<? super Number>",
+        "D": "List<?>"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6m50",
+      "type": "mcq",
+      "question": "Generic을 사용하여 코드 재사용성을 높이는 주요 이유는 무엇인가?",
+      "options": {
+        "A": "코드 길이를 줄이기 위해",
+        "B": "타입 안전성을 보장하기 위해",
+        "C": "런타임 속도를 높이기 위해",
+        "D": "메모리 사용을 줄이기 위해"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": "u6c1",
+      "type": "code",
+      "question": "제너릭 클래스를 선언할 때, 타입 파라미터를 감싸는 기호는 __이다.",
+      "codeSnippet": "public class Box<__> {\n    // ...\n}",
+      "answers": ["T"]
+    },
+    {
+      "id": "u6c2",
+      "type": "code",
+      "question": "다음 코드는 제너릭 메서드를 선언하는 예제이다. 빈칸에 들어갈 코드를 채워 넣으시오.",
+      "codeSnippet": "public static <__> __ method(__ param) {\n    return param;\n}",
+      "answers": ["T", "T", "T"]
+    },
+    {
+      "id": "u6c3",
+      "type": "code",
+      "question": "제너릭 클래스에서 Raw Type을 사용하지 않도록 하기 위해, 타입 파라미터를 반드시 명시해야 한다. 다음 코드에서 빈칸을 채워 넣으시오.",
+      "codeSnippet": "Box<__> box = new Box<>();",
+      "answers": ["String"]
+    },
+    {
+      "id": "u6c4",
+      "type": "code",
+      "question": "다음 코드는 bounded type parameter를 사용하는 예제이다. 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "public class NumberBox<T __ Number> {\n    private T value;\n    public NumberBox(T value) { this.value = value; }\n}",
+      "answers": ["extends"]
+    },
+    {
+      "id": "u6c5",
+      "type": "code",
+      "question": "다음 코드는 와일드카드를 사용하는 예제이다. 빈칸에 들어갈 코드를 채워 넣으시오.",
+      "codeSnippet": "List<? __ Number> list = new ArrayList<>();",
+      "answers": ["extends"]
+    },
+    {
+      "id": "u6c6",
+      "type": "code",
+      "question": "다음 코드는 하한 제한을 사용한 예제이다. 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "List<? __ Integer> list = new ArrayList<>();",
+      "answers": ["super"]
+    },
+    {
+      "id": "u6c7",
+      "type": "code",
+      "question": "enum 키워드를 사용하여 열거형을 선언할 때, 클래스 선언 대신 __를 사용한다.",
+      "codeSnippet": "public __ Color {\n    RED, GREEN, BLUE;\n}",
+      "answers": ["enum"]
+    },
+    {
+      "id": "u6c8",
+      "type": "code",
+      "question": "다음 코드는 enum의 메서드를 사용하는 예제이다. 빈칸에 들어갈 메서드를 채워 넣으시오.",
+      "codeSnippet": "Color c = Color.RED;\nint index = c.__();",
+      "answers": ["ordinal"]
+    },
+    {
+      "id": "u6c9",
+      "type": "code",
+      "question": "어노테이션을 선언할 때, 올바른 키워드를 채워 넣으시오.",
+      "codeSnippet": "public __ MyAnnotation {\n    // ...\n}",
+      "answers": ["@interface"]
+    },
+    {
+      "id": "u6c10",
+      "type": "code",
+      "question": "다음 코드는 어노테이션의 Retention을 지정하는 예제이다. 빈칸에 들어갈 코드를 채워 넣으시오.",
+      "codeSnippet": "@Retention(__.RUNTIME)\npublic @interface MyAnnotation {\n    // ...\n}",
+      "answers": ["RetentionPolicy"]
+    },
+    {
+      "id": "u6c11",
+      "type": "code",
+      "question": "다음 코드는 어노테이션의 Target을 지정하는 예제이다. 빈칸에 들어갈 코드를 채워 넣으시오.",
+      "codeSnippet": "@Target({ __.TYPE, __.METHOD })\npublic @interface MyAnnotation {\n    // ...\n}",
+      "answers": ["ElementType", "ElementType"]
+    },
+    {
+      "id": "u6c12",
+      "type": "code",
+      "question": "제너릭 메서드 선언 시, 메서드 이름 앞에 타입 파라미터를 선언하는 문법은 __이다.",
+      "codeSnippet": "public static <__> void print(__ value) {\n    System.out.println(value);\n}",
+      "answers": ["T", "T"]
+    },
+    {
+      "id": "u6c13",
+      "type": "code",
+      "question": "다이아몬드 연산자를 사용할 때, 생성자에서 타입 파라미터를 생략하는 것을 __라 한다.",
+      "codeSnippet": "List<String> list = new ArrayList<__>();",
+      "answers": ["다이아몬드 연산자"]
+    },
+    {
+      "id": "u6c14",
+      "type": "code",
+      "question": "제너릭 클래스에서 static 멤버에 타입 파라미터를 사용할 수 없는 이유는 __ 때문이다.",
+      "codeSnippet": "public class Box<T> {\n    // static T value; // 올바르지 않음\n}",
+      "answers": ["인스턴스 레벨에서 결정되므로"]
+    },
+    {
+      "id": "u6c15",
+      "type": "code",
+      "question": "다음 코드는 제너릭 메서드의 타입 추론을 보여준다. 빈칸에 들어갈 값을 채워 넣으시오.",
+      "codeSnippet": "public static <T> T identity(T t) {\n    return t;\n}\nString s = identity(__);",
+      "answers": ["\"Hello\""]
+    },
+    {
+      "id": "u6c16",
+      "type": "code",
+      "question": "다음 코드는 제너릭 메서드 호출 예제이다. 빈칸에 들어갈 타입 인자를 채워 넣으시오.",
+      "codeSnippet": "Integer i = GenericMethod.<__>identity(10);",
+      "answers": ["Integer"]
+    },
+    {
+      "id": "u6c17",
+      "type": "code",
+      "question": "다음 코드는 상한 제한을 사용한 제너릭 메서드 예제이다. 빈칸에 들어갈 키워드를 채워 넣으시오.",
+      "codeSnippet": "public static <T __ Number> double add(T a, T b) {\n    return a.doubleValue() + b.doubleValue();\n}",
+      "answers": ["extends"]
+    },
+    {
+      "id": "u6c18",
+      "type": "code",
+      "question": "다음 코드는 와일드카드를 사용하는 메서드 예제이다. 빈칸에 들어갈 내용을 채워 넣으시오.",
+      "codeSnippet": "public void copy(List<? __ T> src, List<T> dest) {\n    dest.addAll(src);\n}",
+      "answers": ["extends"]
+    },
+    {
+      "id": "u6c19",
+      "type": "code",
+      "question": "다음 코드는 제너릭 컬렉션에 요소를 추가하는 예제이다. 빈칸에 들어갈 타입 인자를 채워 넣으시오.",
+      "codeSnippet": "List<__> list = new ArrayList<>();\nlist.add(new String(\"Hello\"));",
+      "answers": ["String"]
+    },
+    {
+      "id": "u6c20",
+      "type": "code",
+      "question": "다음 코드는 enum의 values() 메서드를 사용하는 예제이다. 빈칸에 들어갈 메서드를 채워 넣으시오.",
+      "codeSnippet": "Grade[] grades = Grade.__();",
+      "answers": ["values"]
+    },
+    {
+      "id": "u6c21",
+      "type": "code",
+      "question": "다음 코드는 어노테이션의 @SuppressWarnings 사용 예제이다. 빈칸에 들어갈 경고 타입을 채워 넣으시오.",
+      "codeSnippet": "@SuppressWarnings({ __ })\npublic void method() {}",
+      "answers": ["\"unchecked\""]
+    },
+    {
+      "id": "u6c22",
+      "type": "code",
+      "question": "다음 코드는 어노테이션을 적용한 메서드 예제이다. 빈칸에 들어갈 어노테이션을 채워 넣으시오.",
+      "codeSnippet": "__\npublic void method() {}",
+      "answers": ["@Override"]
+    },
+    {
+      "id": "u6c23",
+      "type": "code",
+      "question": "다음 코드는 enum 상수의 이름을 반환하는 메서드를 사용하는 예제이다. 빈칸에 들어갈 메서드를 채워 넣으시오.",
+      "codeSnippet": "Color c = Color.BLUE;\nString name = c.__();",
+      "answers": ["name"]
+    },
+    {
+      "id": "u6c24",
+      "type": "code",
+      "question": "다음 코드는 제너릭 인터페이스를 구현한 클래스의 선언 예제이다. 빈칸에 들어갈 내용을 채워 넣으시오.",
+      "codeSnippet": "public class MyList implements List<__> {\n    // 구현 생략\n}",
+      "answers": ["String"]
+    },
+    {
+      "id": "u6c25",
+      "type": "code",
+      "question": "다음 코드는 어노테이션의 @Retention 정책을 설정하는 예제이다. 빈칸에 들어갈 값을 채워 넣으시오.",
+      "codeSnippet": "@Retention(__.RUNTIME)\npublic @interface MyAnnotation {}",
+      "answers": ["RetentionPolicy"]
+    },
+    {
+      "id": "u6s1",
+      "type": "subjective",
+      "question": "제너릭을 사용하는 이유와 그 장점에 대해 서술하시오.",
+      "correctAnswer": "타입 안전성과 코드 재사용성을 높이기 위해 사용된다. 이를 통해 컴파일 시 오류를 줄이고, 코드의 재사용성을 향상시킬 수 있다."
+    },
+    {
+      "id": "u6s2",
+      "type": "subjective",
+      "question": "Raw Type이 왜 사용되지 않아야 하는지 설명하시오.",
+      "correctAnswer": "Raw Type은 타입 안전성을 보장하지 못해 런타임 시 ClassCastException과 같은 오류를 발생시킬 수 있으므로 사용을 피해야 한다."
+    },
+    {
+      "id": "u6s3",
+      "type": "subjective",
+      "question": "Type Erasure가 제너릭에서 어떤 역할을 하는지 서술하시오.",
+      "correctAnswer": "Type Erasure는 컴파일 타임에 제너릭 타입 정보를 제거하여 런타임에는 Object 타입으로 동작하도록 하는 메커니즘이다. 이를 통해 이전 버전과의 호환성을 유지할 수 있다."
+    },
+    {
+      "id": "u6s4",
+      "type": "subjective",
+      "question": "와일드카드 '?'의 용도와 사용 예시에 대해 설명하시오.",
+      "correctAnswer": "와일드카드 '?'는 특정 타입을 명시하지 않고, 다양한 타입을 허용하기 위해 사용된다. Producer Extends와 Consumer Super를 통해 입력과 출력에 대해 타입 제한을 설정할 수 있다."
+    },
+    {
+      "id": "u6s5",
+      "type": "subjective",
+      "question": "제너릭 메서드와 일반 메서드의 차이점을 서술하시오.",
+      "correctAnswer": "제너릭 메서드는 메서드 선언부에 타입 파라미터를 명시하여 호출 시 타입을 유추할 수 있도록 하는 반면, 일반 메서드는 타입 파라미터가 없어 고정된 타입만 다룬다."
+    },
+    {
+      "id": "u6s6",
+      "type": "subjective",
+      "question": "bounded type parameter란 무엇이며, 왜 사용하는지 설명하시오.",
+      "correctAnswer": "bounded type parameter는 타입 파라미터에 상한을 지정하여 특정 클래스나 인터페이스의 하위 타입만 허용하도록 제한하는 것이다. 이를 통해 보다 안전한 타입 제약을 제공할 수 있다."
+    },
+    {
+      "id": "u6s7",
+      "type": "subjective",
+      "question": "다이아몬드 연산자의 장점에 대해 설명하시오.",
+      "correctAnswer": "다이아몬드 연산자는 생성자 호출 시 타입 파라미터를 생략할 수 있게 하여 코드가 간결해지고, 컴파일러가 타입을 추론함으로써 타입 오류를 줄일 수 있다."
+    },
+    {
+      "id": "u6s8",
+      "type": "subjective",
+      "question": "enum의 특징과 사용 장점을 서술하시오.",
+      "correctAnswer": "enum은 한정된 상수 집합을 타입 안전하게 정의할 수 있으며, switch-case문에서 사용하기 쉽고, 코드의 가독성을 높여준다."
+    },
+    {
+      "id": "u6s9",
+      "type": "subjective",
+      "question": "enum에서 ordinal() 메서드의 역할과 주의사항에 대해 설명하시오.",
+      "correctAnswer": "ordinal() 메서드는 열거 상수의 선언 순서를 0부터 반환한다. 그러나 이 값은 상수의 순서가 변경되면 달라지므로, 비즈니스 로직에서는 사용에 주의해야 한다."
+    },
+    {
+      "id": "u6s10",
+      "type": "subjective",
+      "question": "enum의 values() 메서드의 용도에 대해 서술하시오.",
+      "correctAnswer": "values() 메서드는 해당 enum 타입에 선언된 모든 열거 상수를 배열로 반환하여 반복문 등을 통해 열거 상수를 손쉽게 다룰 수 있도록 한다."
+    },
+    {
+      "id": "u6s11",
+      "type": "subjective",
+      "question": "어노테이션의 @Retention 정책에 대해 설명하시오.",
+      "correctAnswer": "Retention 정책은 어노테이션이 얼마나 오래 유지될지를 결정하며, SOURCE, CLASS, RUNTIME 중 하나로 설정하여 컴파일 타임이나 런타임 시 어노테이션 정보를 사용할 수 있게 한다."
+    },
+    {
+      "id": "u6s12",
+      "type": "subjective",
+      "question": "어노테이션의 @Target 어노테이션의 역할을 설명하시오.",
+      "correctAnswer": "@Target은 어노테이션이 적용될 수 있는 프로그램 요소(클래스, 메서드, 필드 등)를 제한하여, 잘못된 위치에 어노테이션이 사용되는 것을 방지한다."
+    },
+    {
+      "id": "u6s13",
+      "type": "subjective",
+      "question": "메타 어노테이션이란 무엇이며, 대표적인 예를 서술하시오.",
+      "correctAnswer": "메타 어노테이션은 다른 어노테이션을 정의할 때 사용하는 어노테이션으로, @Retention, @Target, @Inherited, @Documented 등이 대표적이다."
+    },
+    {
+      "id": "u6s14",
+      "type": "subjective",
+      "question": "어노테이션의 @Inherited의 기능과 한계에 대해 설명하시오.",
+      "correctAnswer": "@Inherited는 어노테이션이 상속되도록 하지만, 메서드나 필드와 같이 클래스 내부의 요소에는 적용되지 않는 한계가 있다."
+    },
+    {
+      "id": "u6s15",
+      "type": "subjective",
+      "question": "제너릭을 사용할 때 발생할 수 있는 ClassCastException의 원인에 대해 서술하시오.",
+      "correctAnswer": "제너릭 타입 정보가 런타임에 소거되어 잘못된 타입으로 캐스팅할 경우 발생할 수 있으며, 이는 주로 Raw Type 사용이나 잘못된 타입 변환으로 인해 발생한다."
+    },
+    {
+      "id": "u6s16",
+      "type": "subjective",
+      "question": "Generic을 사용한 컬렉션에서 형변환이 필요 없게 되는 이유를 설명하시오.",
+      "correctAnswer": "컴파일 타임에 타입이 체크되기 때문에, 잘못된 타입의 데이터가 추가되는 것을 막아 별도의 형변환 없이 안전하게 데이터를 사용할 수 있다."
+    },
+    {
+      "id": "u6s17",
+      "type": "subjective",
+      "question": "제너릭에서 와일드카드의 Producer Extends와 Consumer Super의 차이점을 서술하시오.",
+      "correctAnswer": "Producer Extends는 데이터를 반환할 때 사용하며, Consumer Super는 데이터를 소비(추가, 수정)할 때 사용하여, 각각의 상황에 맞게 타입의 상한 또는 하한을 제한한다."
+    },
+    {
+      "id": "u6s18",
+      "type": "subjective",
+      "question": "Raw Type 사용 시 발생할 수 있는 문제점에 대해 설명하시오.",
+      "correctAnswer": "Raw Type은 컴파일 타임의 타입 체크를 우회하여 런타임에 ClassCastException을 발생시킬 수 있으며, 코드의 가독성과 유지보수성을 떨어뜨린다."
+    },
+    {
+      "id": "u6s19",
+      "type": "subjective",
+      "question": "제너릭 메서드의 타입 추론이 어떻게 이루어지는지 설명하시오.",
+      "correctAnswer": "컴파일러가 메서드 호출 시 전달된 인수의 타입을 분석하여, 메서드 선언부의 타입 파라미터를 자동으로 결정하는 과정을 말한다."
+    },
+    {
+      "id": "u6s20",
+      "type": "subjective",
+      "question": "enum 상수에 추가 메서드나 필드를 정의할 때 주의해야 할 점을 서술하시오.",
+      "correctAnswer": "열거 상수 선언 후 반드시 세미콜론(;)을 사용하여 선언부와 멤버를 구분해야 하며, 상수마다 고유의 상태를 부여할 때는 생성자와 필드를 적절히 정의해야 한다."
+    },
+    {
+      "id": "u6s21",
+      "type": "subjective",
+      "question": "어노테이션의 @SuppressWarnings 어노테이션 사용 시 주의사항에 대해 설명하시오.",
+      "correctAnswer": "불필요하게 경고를 억제하면 실제 문제가 있는 코드를 놓칠 수 있으므로, 최소한으로 사용하고 필요한 경우에만 적용해야 한다."
+    },
+    {
+      "id": "u6s22",
+      "type": "subjective",
+      "question": "제너릭을 활용하여 코드의 재사용성을 높이는 방법에 대해 서술하시오.",
+      "correctAnswer": "제너릭을 사용하면 하나의 코드로 다양한 타입을 처리할 수 있어 중복 코드를 줄이고, 타입 안정성을 보장함으로써 재사용성을 높일 수 있다."
+    },
+    {
+      "id": "u6s23",
+      "type": "subjective",
+      "question": "enum의 compareTo() 메서드가 어떻게 동작하는지 설명하시오.",
+      "correctAnswer": "compareTo() 메서드는 두 열거 상수의 ordinal 값을 비교하여, 그 차이를 정수 값으로 반환한다. 이를 통해 열거 상수 간의 순서를 비교할 수 있다."
+    },
+    {
+      "id": "u6s24",
+      "type": "subjective",
+      "question": "어노테이션 프로세서를 사용하여 어노테이션 정보를 처리하는 방법에 대해 설명하시오.",
+      "correctAnswer": "어노테이션 프로세서는 컴파일 타임에 소스코드를 분석하여 어노테이션 정보를 기반으로 코드 생성, 검증, 혹은 문서화를 자동화하는 도구이다."
+    },
+    {
+      "id": "u6s25",
+      "type": "subjective",
+      "question": "제너릭, enum, annotation이 객체지향 프로그래밍에서 가지는 중요성에 대해 서술하시오.",
+      "correctAnswer": "이들은 타입 안전성을 확보하고, 코드의 재사용성을 높이며, 메타데이터를 통해 프로그램의 구조와 동작을 명확하게 표현할 수 있게 해 객체지향 프로그래밍의 견고성과 유지보수성을 향상시킨다."
+    }
   ]
 }
